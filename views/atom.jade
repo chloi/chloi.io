@@ -1,0 +1,23 @@
+\<?xml version="1.0" encoding="UTF-8"?>
+feed(xmlns='http://www.w3.org/2005/Atom')
+  title= info.handle
+  link(href="#{ info.uri }/articles.rss", rel="self", type="application/atom+xml")
+  link(href="#{ info.uri }", rel="alternate", type="text/html")
+  updated= new Date(articles[articles.length -1].date).toString("yyyy-MM-ddTHH:mm:ssZ")
+  author
+    name= info.name
+    email= info.email
+  id= info.uri
+  each article in articles
+    entry(xml:base="#{ info.url }")
+      title= article.title
+      author
+        name= article.name || info.name
+        title
+          \<![CDATA[ #{ article.title } ]]>
+        id= info.uri + "/" + article.slug
+        published= new Date(article.date).toString("yyyy-MM-ddTHH:mm:ssZ")
+        updated= new Date(article.date).toString("yyyy-MM-ddTHH:mm:ssZ")
+        link(href="#{ info.uri }/#{ article.slug }", rel="alternate", type="text/html")
+        content(type="html")= article.html
+      

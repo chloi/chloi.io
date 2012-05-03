@@ -1,7 +1,8 @@
  $(document).ready(function(){
    // Your code here
-   $('[rel="popover"]').popover({})
-   $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump)   
+   $('[rel="popover"]').popover({});
+   $('.navbar').scrollspy()
+   $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump);
  });
 
  $.CHLOI = function(){
@@ -10,7 +11,7 @@
        if(location.hash.length > 0){
          var target = location.hash.split('/')[1];
          $('html, body').animate({scrollTop: $('#'+target).offset().top-90}, 500);
-         $('.nav a[href=#'+target+']').addClass('active');
+         $('.nav a[href=#'+target+']').addClass('active');           
        }
      } catch(e) { location.hash = ''; }
    });
@@ -25,7 +26,7 @@
        var target = $(this).attr('href');
        $('html, body').animate({
          scrollTop: $(target).offset().top-90
-       }, 500, function(){
+       }, 250, function(){
          location.hash = '#/'+target.split('#')[1];
        });
      }

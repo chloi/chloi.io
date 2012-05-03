@@ -4,24 +4,6 @@
 // APP LAYOUT
 ///////////////
 
-.main{
-  border-left:1px solid #ddd;
-  
-  .header, .footer{
-    background:#fff;
-    padding-top:60px;
-    padding-bottom:60px;
-  }
-
-  .content{
-    background:#fff;
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
-    padding-top:30px;
-    padding-bottom:60px;
-  }
-}
-
 
 @font-face {
 	font-family: 'ProximaNova';
@@ -38,7 +20,6 @@
 	src: url('../font/ProximaNova-Bold.otf') format('opentype');
 }
 
-
 h1 {
   font-size:48px;
   font-family: ProximaNovaBold;
@@ -50,11 +31,21 @@ h1 {
 h2 {
   font-size:36px;
   font-family: ProximaNovaSemiBold;
-  color:#5D5D5D
+  color:#5D5D5D;
+  margin:20px 0px;  
 }
 
 body, p {
   font-size:16px;
   font-family: ProximaNova;
-
 }
+
+body {
+  background: url(../img/diamond-fringe_ver.png) repeat-y top left;
+}
+
+.section {
+  border-bottom:3px dashed #ccc;
+  min-height:300px;
+}
+

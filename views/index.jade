@@ -21,21 +21,36 @@
 
 #home.container.section          
   h1(style='margin-top:120px') The Mobile Web Experts
-    h2 Making the web make sense
+    h2 Chloi is the premier PhoneGap Consulting and development studio.  
     p We are strong believers in the web, long before HTML5 and the first generation iPhone.
+    img(src="/img/HTML5_Badge.png", width='150px')
 
 #about.container.section
-  h2 About
-  p Chloi's vision is to grow a world-class consulting firm focusing on real problems in both the web and mobile markets. We believe in a strong balance between timelines, product quality and scope.
+  .row
+    .span8
+      h2 About
+      p Chloi's vision is to grow a world-class consulting firm focusing on real problems in both the web and mobile markets. We believe in a strong balance between timelines, product quality and scope.
 
-  p We believe Chloi’s tremendous attribute is to be able to work anywhere in the software stack, this means being able to make tough architecture decisions in areas that could effect a unrelated piece of the stack. An example would be how a complex webpage relates to how data is modelled and queried. Another example is how an API can effect how the data is described in the database or consumed in an application.
+      p We believe Chloi’s tremendous attribute is to be able to work anywhere in the software stack, this means being able to make tough architecture decisions in areas that could effect a unrelated piece of the stack. An example would be how a complex webpage relates to how data is modelled and queried. Another example is how an API can effect how the data is described in the database or consumed in an application.
 
 
 #team.container.section
   h2 The Team
-  p Brock
-  p Rob
-
+  .row
+    .span6
+      .row
+        .span3
+          img(src='src.png', style='width:200px;border:1px solid #000')
+        .span3
+          h3 Brock Whitten <a href='http://www.twitter.com/sintaxi'>@sintaxi</a>
+          p Brock is a rockstar.
+    .span6
+    .row
+      .span3
+        img(src='src.png', style='width:200px;border:1px solid #000')
+      .span3
+        h3 Rob Ellis <a href='http://www.twitter.com/rob_ellis'>@rob_ellis</a>
+        p Rob is also a rockstar.
 
 
 #projects.container.section
@@ -60,15 +75,15 @@
     .span4
       h3 Mobile Development
       ul
-        li Responsive Design
-        li Device aware
-        li Offline Support
+        li Mobile Development with PhoneGap
+        li Mobile Web with Responsive Design
+        li Offline Support with Cache Manifest &amp; indexDB
 
     .span4
       h3 Server
       ul
         li Realtime System design &amp Architecture with Node.JS
-        li Application Programming Interface (API) 
+        li API - Application Programming Interface design
         li Message Queues and Real-Time Socket design
 
     .span4
@@ -94,7 +109,7 @@
         label Email:
         input(type='text)
         label Message:
-        textarea
+        textarea(style='width:340px;height:70px')
         <br />
         button(class='btn') Send us a message
         

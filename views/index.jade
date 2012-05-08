@@ -1,25 +1,4 @@
-// .navbar
-//   .navbar-inner
-//     .container
-//       .row
-//         .span3
-//           a.brand(href="#", width="100%")
-//             img(src='/img/chloi_logo.png')
-//         .span8
-//           ul.nav.pull-right
-//             li.active
-//               a(href='#home') Home
-//             li
-//               a(href='#about') About
-//             li
-//               a(href='#team') Team
-//             li
-//               a(href='#projects') Projects
-//             li
-//               a(href='#services') Services
-//             li
-//               a(href='#contact') Contact Us
-          
+!= partial("introduction")
 
 #header.section
   .container
@@ -151,28 +130,4 @@
           li Professional PhoneGap training and support.
           li Mobile Design and Web best practices.
 
-
-#contact.section
-  .container
-    .row
-      .span12
-        h2 Contact
-    .row
-      .span6
-        h3 Like what you see? Have a project in mind, lets talk about it.
-        p Twitter: 
-          a(href="http://www.twitter.com/chloi") @chloi
-        p Email: 
-          a(href="mailto:sales@chloi.io") sales@chloi.io
-        p Phone: 
-          a() 778-987-9239
-      .span4
-        form
-          label Name:
-          input(type='text)
-          label Email:
-          input(type='text)
-          label Message:
-          textarea(style='width:340px;height:70px')
-          <br />
-          button(class='btn') Send us a message
+!= partial("contact")

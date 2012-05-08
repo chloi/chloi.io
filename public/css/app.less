@@ -78,7 +78,7 @@ b, strong {
 #introduction{
   margin-top:100px;
   padding:100px;
-  background:#eee;
+  background:#111;
   
   h3{
     color:#222;
@@ -99,16 +99,60 @@ b, strong {
   }
 }
 
+#services{
+  img{
+    width:100%;
+  }
+}
+
+@contactBGcolor: rgb(37,60,64);
+@contactH2color: #ddd;
+
 #contact{
   margin-top:30px;
   background:#eee;
+  background:@contactBGcolor;
   padding-bottom:100px;
   
-  img.map{
+  
+  
+  h2{
+    color:@contactH2color;
+    border-color:@contactH2color;
+  }
+  
+  h3{
+    margin:0;
+  }
+  
+  .well{
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    background:darken(@contactBGcolor, 2%);
+  }
+  
+  input{
+    padding:6px;
+  }
+  
+  textarea{
+    padding:6px;
+  }
+  
+  label{
+    color:#eee;
+  }
+  
+  a.map{
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    display:block;
+    width:100%;
+  }
+  
+  img{
     width:100%;
     padding:5px;
-    background:#FFF;
+    background:#eee;
+    margin-bottom:20px;
   }
 }
 

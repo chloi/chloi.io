@@ -3,6 +3,11 @@
    $('[rel="popover"]').popover({});
    $('.navbar').scrollspy()
    $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump);
+   
+   $("#introduction").addClass("tran").each(function(x){
+     var that = this;
+     window.setTimeout(function(){$(that).slideUp('slow')},2000);
+   })
  });
 
  $.CHLOI = function(){

@@ -1,9 +1,9 @@
 {
-  "name": "chloi_website",
+  "name": "chloi-website",
   "version": "0.1.0",
   "dependencies": {
     "express": "",
-    "connect-less-jolira": "",
+    "less": "",
     "jade": "",
     "request": "",
     "markdown": ""

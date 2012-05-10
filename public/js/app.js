@@ -15,7 +15,7 @@
      try {
        if(location.hash.length > 0){
          var target = location.hash.split('/')[1];
-         $('html, body').animate({scrollTop: $('#'+target).offset().top-90}, 500);
+         $('html, body').animate({scrollTop: $('#'+target).offset().top }, 500);
          $('.nav a[href=#'+target+']').addClass('active');           
        }
      } catch(e) { location.hash = ''; }
@@ -30,7 +30,7 @@
 
        var target = $(this).attr('href');
        $('html, body').animate({
-         scrollTop: $(target).offset().top-90
+         scrollTop: $(target).offset().top
        }, 250, function(){
          location.hash = '#/'+target.split('#')[1];
        });

@@ -10,15 +10,13 @@ var request   = require("request")
 var app       = express.createServer()
 var m         = require("./lib/middleware")
 
-
-
 if(process.env.NODE_ENV == "production"){
   var exec = require('child_process').exec
   exec('./node_modules/.bin/lessc public/css/app.less public/css/app.css;',
     function (error, stdout, stderr) {
       if (error) {
         console.log('exec error: ' + error)
-      }else{
+      } else {
         console.log("compiled css files")
       }
   })
@@ -29,8 +27,9 @@ if(process.env.NODE_ENV == "production"){
 // --------------------
 
 app.configure(function(){
-  app.set("view engine", "jade")
-  app.set('views', __dirname + '/views');  
+  app.set("view engine", "jade");
+  app.set('views', __dirname + '/views'); 
+  app.use(express.bodyParser());
   app.use(express.static(__dirname + "/public"))
 })
 
@@ -42,6 +41,14 @@ app.get("/", m.info, function(req, rsp){
   rsp.render("index", {
     info      : req.info
   })
+})
+
+// --------------------
+// contact form
+// --------------------
+app.post("/contact", function(req, rsp){      
+  console.log(req.body);
+  rsp.redirect("index")
 })
 
 // --------------------

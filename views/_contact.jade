@@ -9,7 +9,7 @@
           .span8
             a.map(href="#")
               img(src="img/map.jpg")
-      .span4.well
+      .span4
         h3 Phone: 
           .subheah
             a(href="#") 778-987-9239
@@ -20,11 +20,14 @@
           .subheah
             a(href="http://www.twitter.com/chloi") @chloi
       .span4
-        form.well(method='post', action='/contact')
-          h3 Like what you see? Have a project in mind, lets talk about it.
-          input.span3(type='text', name='name', placeholder='Name')
-          input.span3(type='text', name='email', placeholder='Email')
-          textarea.span3(name='message', placeholder='Message...')
+        h3 Have a project in mind? Lets talk about it.
+        form(method='post', action='/contact')
+          label Name
+          input.span4(type='text', name='name', placeholder='Name')
+          label Email
+          input.span4(type='text', name='email', placeholder='we respect your privacy')
+          label Message
+          textarea.span4(name='message', placeholder='Tell us a bit about your product...')
           button.btn.btn-large.btn-primary Send
 
 #footer

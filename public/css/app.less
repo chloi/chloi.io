@@ -50,13 +50,41 @@ h3 {
   color:#424041;
 }
 
-.navbar .brand{
-  padding-bottom:0px;
+blockquote{
+  margin-top:20px;
+  border:5px solid #eee;
+  border-width:5px 0px;
+  padding:5px;
+  h3{
+    margin:15px 0px;
+  }
 }
 
-.nav li{
-
+.navbar{
+  overflow:auto;
+  margin-bottom:10px;
+  ul.nav{
+  
+    margin-top:20px;
+    
+    
+    li > a {
+      line-height:15px;
+      font-weight:bold;
+      color:#666;
+      font-size:16px;
+    }
+    li > a:hover {
+      border-bottom:3px solid #eee;
+    }
+  }
 }
+
+.navbar-inner{
+  padding-right:0px;
+}
+
+
 
 body, p, label, b, strong {
   font-size:16px;
@@ -77,6 +105,9 @@ b, strong {
 
 #home{
   padding:0px;
+  img{
+    width:100%;
+  }
 }
 
 #introduction{

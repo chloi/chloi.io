@@ -22,12 +22,11 @@
 
 
 body{
-  background: url(../img/diamond-fringe-40px.png) repeat-y top left;
+  // background: url(../img/diamond-fringe-40px.png) repeat-y top left;
 }
 
 h1 {
   font-size:26px;
-  color:rgb(243,243,223);
   font-family: ProximaNovaBold;
   text-transform:uppercase;
   text-align:center;
@@ -40,16 +39,53 @@ h2 {
   //font-family: ProximaNovaSemiBold;
   font-family: ProximaNovaBold;
   text-transform:uppercase;
-  color:#5D5D5D;
-  color:#141414;
-  border-bottom: 1px #eee solid;
+  color:#D2D0C4;
+  border-bottom: 1px #E2E0D4 solid;
 }
 
 h3 {
   font-size:18px;
   font-family: ProximaNovaSemiBold;
   color:#141414;
+  color:#424041;
 }
+
+blockquote{
+  margin-top:20px;
+  border:5px solid #eee;
+  border-width:5px 0px;
+  padding:5px;
+  h3{
+    margin:15px 0px;
+    line-height:45px;
+    font-size:30px;
+  }
+}
+
+.navbar{
+  overflow:auto;
+  margin-bottom:10px;
+  ul.nav{
+  
+    margin-top:20px;
+    
+    
+    li > a {
+      line-height:15px;
+      font-weight:bold;
+      color:#666;
+      font-size:16px;
+    }
+    li > a:hover {
+      border-bottom:3px solid #eee;
+    }
+  }
+}
+
+.navbar-inner{
+  padding-right:0px;
+}
+
 
 
 body, p, label, b, strong {
@@ -71,6 +107,9 @@ b, strong {
 
 #home{
   padding:0px;
+  img{
+    width:100%;
+  }
 }
 
 #introduction{
@@ -97,20 +136,28 @@ b, strong {
   }
 }
 
+#about{
+  img.chloi-icon{
+    width:100%;
+    opacity:0.2;
+  }
+}
+
 #services{
   img{
     width:100%;
   }
 }
 
-@contactBGcolor: rgb(37,60,64);
-@contactH2color: #ddd;
+@contactBGcolor: darken(#FFF, 6%);
+@contactH2color: #999;
 
 #footer {
   background:@contactBGcolor;
   color:@contactH2color;
   text-transform:uppercase;
-  font-size:11px;
+  font-size:12px;
+  padding-bottom:20px;
   
   .copy {
     border-top:1px solid @contactH2color;
@@ -120,7 +167,6 @@ b, strong {
 
 #contact{
   margin-top:30px;
-  background:#eee;
   background:@contactBGcolor;
   padding-bottom:100px;
   
@@ -135,7 +181,7 @@ b, strong {
   
   .well{
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-    background:@contactBGcolor;
+    background:darken(@contactBGcolor, 2%);
   }
   
   .well h3 {
@@ -174,7 +220,7 @@ b, strong {
 }
 
 .leadin {
-  margin:0px 16px 0px 0px !important;
+  margin:0px 0px 0px 0px !important;
   padding:0px;
 }
 

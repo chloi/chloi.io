@@ -2,33 +2,24 @@
   .container
     .row
       .span12
-        h2 Contact
+        h2 Contact Us
     .row          
-      .span8.well
-        .row
-          .span8
-            a.map(href="#")
-              img(src="img/map.jpg")
-      .span4
-        h3 Phone: 
-          .subheah
-            a(href="#") 778-987-9239
-        h3 Email: 
-          .subheah
-            a(href="mailto:info@chloi.io") info@chloi.io
-        h3 Twitter: 
-          .subheah
-            a(href="http://www.twitter.com/chloi") @chloi
-      .span4
-        h3 Have a project in mind? Lets talk about it.
+      .span7
+        iframe(width='100%', height='400', frameBorder='0', src='http://a.tiles.mapbox.com/v3/sintaxi.map-hi5mm7hk.html#17/49.2828/-123.1075', class="map")
+
+      .span5
+        h3 Have and idea?
         form(method='post', action='/contact')
           label Name
-          input.span4(type='text', name='name', placeholder='Name')
+          input.span4(type='text', name='name')
           label Email
-          input.span4(type='text', name='email', placeholder='we respect your privacy')
+          input.span4(type='text', name='email')
           label Message
-          textarea.span4(name='message', placeholder='Tell us a bit about your product...')
+          textarea.span5(name='message')
           button.btn.btn-large.btn-primary Send
+          
+      .span4
+
 
 #footer
   .container

@@ -1,18 +1,20 @@
 #header.section
+.container
+  .navbar.center-brand
+    .navbar-inner
+      a.brand(href="/")
+        img(src='/img/chloi-wordmark-500px.png', style='width:300px')
+
   .container
-    .row
-      .span12
-        .navbar
-          .navbar-inner
-            a.brand(href="/")
-              img(src='/img/chloi-wordmark-500px.png', style='width:200px')
-            ul.nav.pull-right
-              li
-                a(href='#about') About
-              li
-                a(href='#projects') Projects
-              li
-                a(href='#services') Services
-              li
-                a(href='#contact') Contact
-              li.navbar-text.spacer
+    .navbar
+      .navbar-inner
+        ul.nav.pull-center
+          li
+            a(href='#about') About
+          li
+            a(href='#projects') Projects
+          li
+            a(href='#services') Services
+          li
+            a(href='#contact') Contact
+          li.navbar-text.spacer

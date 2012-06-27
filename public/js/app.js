@@ -47,7 +47,8 @@
          var target = location.hash.split('/')[1];
          var of = (target == "header") ? 0 : 350;
          $('html, body').animate({scrollTop: $('#'+target).offset().top + of}, 500);
-         $('.nav a[href=#'+target+']').addClass('active');           
+         $('.nav a[href=#'+target+']').addClass('active');
+         if (target == "header") location.hash = '';
        }
      } catch(e) { location.hash = ''; }
    });
@@ -58,13 +59,11 @@
 
        $('.nav .active').removeClass('active');
        $(this).addClass('active');
-
        var target = $(this).attr('href');
-       console.log(target)
        $('html, body').animate({
          scrollTop: $(target).offset().top
        }, 250, function(){
-         location.hash = '#/'+target.split('#')[1];
+         location.hash = (target == "#header") ? "" : '#/'+target.split('#')[1];
        });
      }
    }

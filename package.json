@@ -6,6 +6,7 @@
     "less": "",
     "jade": "",
     "request": "",
-    "markdown": ""
+    "markdown": "",
+    "validator": "0.2.8"
   }
 }

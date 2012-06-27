@@ -9,6 +9,10 @@ var request   = require("request")
 // stuff
 var app       = express.createServer()
 var m         = require("./lib/middleware")
+var Thug      = require("./lib/thug")
+
+// models
+var message   = require("./models/message")({})
 
 if(process.env.NODE_ENV == "production"){
   var exec = require('child_process').exec
@@ -39,16 +43,27 @@ app.configure(function(){
 
 app.get("/", m.info, function(req, rsp){      
   rsp.render("index", {
-    info      : req.info
+    info : req.info
   })
 })
 
 // --------------------
 // contact form
 // --------------------
-app.post("/contact", function(req, rsp){      
-  console.log(req.body);
-  rsp.redirect("index")
+
+app.post("/messages", function(req, rsp){
+  message.create(req.body, function(errors, obj){
+    if(errors){
+      // not sent
+      console.log("not sent")
+      console.log(errors.messages)
+      rsp.redirect("index")
+    }else{
+      // sent
+      console.log("sent")
+      rsp.redirect("index")
+    }
+  })
 })
 
 // --------------------

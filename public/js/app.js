@@ -22,8 +22,8 @@
 
  $(document).ready(function(){
    // $('[rel="popover"]').popover({});
-   // $('.navbar').scrollspy()
-   // $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump);
+   $('.navbar').scrollspy()
+   $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump);
 
     $(document).bind('touchstart',function(e){
       var allTouches = event.touches;

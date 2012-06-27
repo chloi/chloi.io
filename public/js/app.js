@@ -24,6 +24,7 @@
    // $('[rel="popover"]').popover({});
    $('.navbar').scrollspy()
    $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump);
+   $('.btt a[href*=#]').bind("click", $.CHLOI.navigationJump);   
 
     $(document).bind('touchstart',function(e){
       var allTouches = event.touches;
@@ -44,7 +45,8 @@
      try {
        if(location.hash.length > 0){
          var target = location.hash.split('/')[1];
-         $('html, body').animate({scrollTop: $('#'+target).offset().top }, 500);
+         var of = (target == "header") ? 0 : 350;
+         $('html, body').animate({scrollTop: $('#'+target).offset().top + of}, 500);
          $('.nav a[href=#'+target+']').addClass('active');           
        }
      } catch(e) { location.hash = ''; }
@@ -58,6 +60,7 @@
        $(this).addClass('active');
 
        var target = $(this).attr('href');
+       console.log(target)
        $('html, body').animate({
          scrollTop: $(target).offset().top
        }, 250, function(){

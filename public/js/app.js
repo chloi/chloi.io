@@ -21,18 +21,19 @@
 })(jQuery);
 
  $(document).ready(function(){
-   // Your code here
-   $('[rel="popover"]').popover({});
-   $('.navbar').scrollspy()
-   $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump);
-   
-   $("#introduction").addClass("tran").each(function(x){
-     var that = this;
-     window.setTimeout(function(){$(that).slideUp('slow')},2000);
-   })
-   
+   // $('[rel="popover"]').popover({});
+   // $('.navbar').scrollspy()
+   // $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump);
+
+    $(document).bind('touchstart',function(e){
+      var allTouches = event.touches;
+      if (allTouches.length === 11) {
+        $("#home img").attr('src','img/brand.jpg')
+      }
+    });
+
 		$(window).chloi(function(){
-		  $('#myMydal').modal('show');
+		  console.log("Well Done");
 		});
    
  });

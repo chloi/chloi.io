@@ -21,6 +21,7 @@
 })(jQuery);
 
  $(document).ready(function(){
+   
    // $('[rel="popover"]').popover({});
    $('.navbar').scrollspy()
    $('.nav a[href*=#]').bind("click", $.CHLOI.navigationJump);

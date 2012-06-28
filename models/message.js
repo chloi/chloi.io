@@ -14,16 +14,14 @@ module.exports = function(creds) {
       out    : []
     },
     "validations": {
-      "email"   : [validations.present, validations.email],
       "name"    : [validations.present],
+      "email"   : [validations.present, validations.email],
       "body"    : [validations.present]
     }
   })
   
   // Write the Record
   message.constructor.prototype.write = function(obj, cb){
-    console.log("Sending Email...")
-    console.log(obj)
     // send message here
     cb(null, obj)
   }

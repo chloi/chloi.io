@@ -9,8 +9,9 @@
         iframe(width='100%', height='400', frameBorder='0', src='http://a.tiles.mapbox.com/v3/sintaxi.map-hi5mm7hk.html#17/49.2828/-123.1075', class="map")
 
       .span5
-        h3 Have and idea?
-        form(method='post', action='/messages')
+        #alert
+          h3 Have and idea?
+        form.messages(method='post', action='/messages')
           label Name
           input.span4(type='text', name='name')
           label Email

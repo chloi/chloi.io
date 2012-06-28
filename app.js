@@ -54,14 +54,9 @@ app.get("/", m.info, function(req, rsp){
 app.post("/messages", function(req, rsp){
   message.create(req.body, function(errors, obj){
     if(errors){
-      // not sent
-      console.log("not sent")
-      console.log(errors.messages)
-      rsp.redirect("index")
+      rsp.send(JSON.stringify(errors), 400)
     }else{
-      // sent
-      console.log("sent")
-      rsp.redirect("index")
+      rsp.send(JSON.stringify(obj), 201)
     }
   })
 })

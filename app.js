@@ -4,7 +4,6 @@ var fs        = require("fs")
 // libs
 var express   = require("express")
 var jade      = require("jade")
-var request   = require("request")
 
 // stuff
 var app       = express.createServer()
@@ -12,7 +11,7 @@ var m         = require("./lib/middleware")
 var Thug      = require("./lib/thug")
 
 // models
-var message   = require("./models/message")({})
+var message   = require("./models/message")({ token: "c34e1598-d371-4809-a418-6aac7cc8a03b" })
 
 if(process.env.NODE_ENV == "production"){
   var exec = require('child_process').exec

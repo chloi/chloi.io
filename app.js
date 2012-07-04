@@ -40,10 +40,8 @@ app.configure(function(){
 // index
 // --------------------
 
-app.get("/", m.info, function(req, rsp){      
-  rsp.render("index", {
-    info : req.info
-  })
+app.get("/", function(req, rsp){      
+  rsp.render("index")
 })
 
 // --------------------

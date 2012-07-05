@@ -1,21 +1,24 @@
 #header.section
-.container
-  .navbar
-    .navbar-inner
-      #mobile-eng Mobile Engineering&nbsp;
-        .number Phone: 778-786-3735&nbsp;&nbsp;
-      a.brand(href="/")
-        img(src='/img/chloi-wordmark-500px.png', style='width:260px')
   .container
-    .navbar
-      .navbar-inner
-        ul.nav.pull-left
-          li
-            a(href='#what') About
-          li
-            a(href='#services') Services
-          li
-            a(href='#community') Community            
-          li
-            a(href='#contact') Contact
-          li.navbar-text.spacer
+    .row
+      .span3
+        h1.brand
+          a(href="/")
+            img(src='/img/chloi-wordmark-500px.png', alt="Chloi Inc", width="100%")
+      .span9      
+        h4.mobile-eng Mobile Engineering
+          span.number Phone: 778-786-3735
+  .container
+    .row
+      .span12
+        .nav-shell
+          ul.nav
+            li
+              a(href='#what') About
+            li
+              a(href='#services') Services
+            li
+              a(href='#community') Community            
+            li
+              a(href='#contact') Contact
+            li.navbar-text.spacer

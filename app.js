@@ -15,7 +15,7 @@ var message   = require("./models/message")({ token: "c34e1598-d371-4809-a418-6a
 
 if(process.env.NODE_ENV == "production"){
   var exec = require('child_process').exec
-  exec('./node_modules/.bin/lessc public/css/app.less public/css/app.css;',
+  exec('./node_modules/.bin/lessc public/css/app.less public/css/app.css; ; ./node_modules/.bin/lessc public/css/responsive.less public/css/responsive.css;',
     function (error, stdout, stderr) {
       if (error) {
         console.log('exec error: ' + error)

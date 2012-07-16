@@ -1,19 +1,18 @@
-!= partial("header")
-
 #article.section
   .container
     .row
-      .span12
-        h3= article.date
-    .row
-      .span12
+      .span3
+        a(href="/")
+          img(src="/img/chloi-icon-500px.png", align='right', style='padding:30px; width:100%')
+    
+      .span9
         != partial("articles/" + article.slug)
         
         a(href="https://twitter.com/share",class="twitter-share-button", data-text="#{article.title}", data-via="chloi_inc",  data-size="large") Tweet 
         .g-plusone(data-annotation="inline")
 
     .row
-      .span12
+      .span9.offset3
         h3= article.author
         
     script

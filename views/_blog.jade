@@ -1,0 +1,25 @@
+
+#blog.section
+  .container
+    .row
+      .span12
+        h2 Blog &amp; Social
+          .btt <a href="#header">Top</a>
+    .row
+      .span8
+        each article in articles
+          div(style="border-bottom:1px solid #ccc;margin-bottom:15px;padding-bottom:10px")
+            h3(style="margin:0px;")
+              a(href="/blog/#{ article.slug }")= article.title
+            span by&nbsp;
+            = article.author
+            &nbsp;|&nbsp;
+            a(style="text-align:right")= article.date     
+      .span4(style='height:300px;overflow:hidden')
+        script(charset='uft-8',src="http://widgets.twimg.com/j/2/widget.js")
+        script(type="text/javascript")
+          new TWTR.Widget({version: 2,type: 'search', search: 'from:Chloi_inc', width:'auto',features: {scrollbar: false,loop: false,live: false,behavior: 'default'},theme: {shell: {background: '#ffffff',color: '#ffffff'},tweets: {background: '#ffffff',color: '#444444',links: '#1985b5'}},height: 300,}).render().start();
+          
+
+          
+          

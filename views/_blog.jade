@@ -7,19 +7,41 @@
           .btt <a href="#header">Top</a>
     .row
       .span8
+        h3 Updates
         each article in articles
-          div(style="border-bottom:5px solid #ccc;margin-bottom:15px;padding-bottom:10px")
-            h3(style="margin:0px;")
+          div.article-excerpt
+            h3
               a(href="/blog/#{ article.slug }")= article.title
             span by&nbsp;
             = article.author
             &nbsp;|&nbsp;
-            a(href="/blog/#{ article.slug }", style="text-align:right")= article.date     
-      .span4(style='height:300px;overflow:hidden')
-        script(charset='uft-8',src="http://widgets.twimg.com/j/2/widget.js")
-        script(type="text/javascript")
-          new TWTR.Widget({version: 2,type: 'search', search: 'from:Chloi_inc', width:'auto',features: {scrollbar: false,loop: false,live: false,behavior: 'default'},theme: {shell: {background: '#ffffff',color: '#ffffff'},tweets: {background: '#ffffff',color: '#444444',links: '#1985b5'}},height: 300,}).render().start();
-          
-
-          
-          
+            a(href="/blog/#{ article.slug }")= article.date     
+      .span4
+        h3 Twitter
+        script(charset="utf-8", src="http://widgets.twimg.com/j/2/widget.js")
+        script
+          new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 5,
+            interval: 30000,
+            width: 'auto',
+            height: 300,
+            theme: {
+              shell: {
+                background: '#ffffff',
+                color: '#333333'
+              },
+              tweets: {
+                background: '#ffffff',
+                color: '#333333',
+                links: '#333333'
+              }
+            },
+            features: {
+              scrollbar: false,
+              loop: false,
+              live: false,
+              behavior: 'all'
+            }
+          }).render().setUser('chloi_inc').start();

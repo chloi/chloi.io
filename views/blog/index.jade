@@ -1,1 +1,8 @@
-!= partial("articles", { articles  : articles })
+h2 Words of Chloi
+
+ul.articles
+  each article in articles
+    li
+      a(href="/#{ article.slug }")
+        span.date(style="text-align:right")= article.date 
+        =  article.title 

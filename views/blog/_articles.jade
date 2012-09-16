@@ -1,8 +1,0 @@
-
-h2 Articles
-table.table
-  each article in articles
-    tr(data-location="/#{ article.slug }")
-      td
-        a(href="/#{ article.slug }")= article.title
-      td(style="text-align:right")= article.date

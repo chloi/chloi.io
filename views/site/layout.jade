@@ -20,11 +20,11 @@ html(lang="en")
     link(rel="stylesheet", href="/css/bootstap-extlib.css", type="text/css")
   
     if process.env.NODE_ENV != "production"
-      link(rel="stylesheet/less", href="/css/app.less", type="text/css")
+      link(rel="stylesheet/less", href="/css/site.less", type="text/css")
       link(rel="stylesheet/less", href="/css/responsive.less", type="text/css")
       script(src="/js/less-1.3.0.min.js")
     else
-      link(rel="stylesheet", href="/css/app.css", type="text/css")
+      link(rel="stylesheet", href="/css/site.css", type="text/css")
       link(rel="stylesheet", href="/css/responsive.css", type="text/css")
     != partial("analytics")
   body(onload="prettyPrint()", data-spy='scroll')

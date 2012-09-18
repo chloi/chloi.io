@@ -3,19 +3,20 @@
   .container
     .row
       .span12
-        h2 Blog &amp; Social
+        h2 In the wild
           .btt <a href="#header">Top</a>
     .row
       .span8
-        h3 Updates
-        each article in articles
-          div.article-excerpt
-            h3
-              a(href="/blog/#{ article.slug }")= article.title
-            span by&nbsp;
-            = article.author
-            &nbsp;|&nbsp;
-            a(href="/blog/#{ article.slug }")= article.date     
+        h3 Words of Chloi
+        ul.articles
+          each article in articles
+            li.article(class="#{ article.color }")
+              a(href="/#{ article.slug }")
+                h3= article.title
+                
+              
+                
+                
       .span4
         h3 Twitter
         script(charset="utf-8", src="http://widgets.twimg.com/j/2/widget.js")

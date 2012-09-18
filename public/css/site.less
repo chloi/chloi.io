@@ -434,13 +434,42 @@ p.jumbotron.meetup{
   }
 }
 
-.article-excerpt {
-  border-bottom: 1px dotted #ddd;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  > h3 {
-    margin: 0;
-    padding: 0;
+#blog.section{
+  h3{
+    font-size:22px;
+  }
+
+  ul.articles{
+    list-style-type:none;
+    margin-left:0;
+  
+    li.article{
+      
+      margin-bottom: 25px;
+  
+      a:hover{
+        text-decoration:none;
+      }
+      
+      a{
+        overflow:auto;
+        h3{
+          padding:20px;
+          display:inline;
+          color:#FFF;
+          font-size:18px;
+          border: 1px solid #666;
+          border-color: transparent;
+          .border-radius(5px);
+        }
+      }
+
+    }
+
+    li.article.purple a h3{ background: @purple; }
+    li.article.blue a h3{ background: @blue; }
+    li.article.orange a h3{ background: @orange; }
+    li.article.red a h3{ background: @red; }
   }
 }
 

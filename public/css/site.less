@@ -426,11 +426,11 @@ p.jumbotron.meetup{
 
 #article {
   h1 {
-    text-align:left;
-    margin-bottom:0px;
+    text-align: left;
+    margin-bottom: 0px;
   }
   h3 {
-    margin:0px;
+    margin: 0px;
   }
 }
 
@@ -438,39 +438,91 @@ p.jumbotron.meetup{
   h3{
     font-size:22px;
   }
+}
 
-  ul.articles{
-    list-style-type:none;
-    margin-left:0;
-  
-    li.article{
-      
-      margin-bottom: 25px;
-  
-      a:hover{
-        text-decoration:none;
-      }
-      
-      a{
-        overflow:auto;
-        h3{
-          padding:20px;
-          display:inline;
-          color:#FFF;
-          font-size:18px;
-          border: 1px solid #666;
-          border-color: transparent;
-          .border-radius(5px);
-        }
-      }
-
-    }
-
-    li.article.purple a h3{ background: @purple; }
-    li.article.blue a h3{ background: @blue; }
-    li.article.orange a h3{ background: @orange; }
-    li.article.red a h3{ background: @red; }
+.articles {
+  list-style-type: none;
+  margin-left: 0;
+}
+.article {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 15px;
+  .fancy {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: @orange;
+    z-index: -1;
   }
+  a {
+    overflow:auto;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    
+  }
+  // Themes
+  &.purple {
+    .fancy {
+      background: @purple;
+    }
+    &:hover {
+      .article-title {
+        color: @purple;
+      }
+    }
+  }
+  &.blue {
+    .fancy {
+      background: @blue;
+    }
+    &:hover {
+      .article-title {
+        color: @blue;
+      }
+    }
+  }
+  &.orange {
+    .fancy {
+      background: @orange;
+    }
+    &:hover {
+      .article-title {
+        color: @orange;
+      }
+    }
+  }
+  &.red {
+    .fancy {
+      background: @red;
+    }
+    &:hover {
+      .article-title {
+        color: @red;
+      }
+    }
+  }
+}
+.article-title,
+.article-meta {
+  padding: 5px;
+}
+.article-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 0;
+}
+.article-meta {
+  font-size: 14px;
+  color: #999;
+  opacity: .8;
 }
 
 

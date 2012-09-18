@@ -12,7 +12,9 @@
           each article in articles
             li.article(class="#{ article.color }")
               a(href="/#{ article.slug }")
-                h3= article.title
+                span.fancy
+                h3.article-title= article.title
+                span.article-meta #{article.date} by #{article.author}
                 
               
                 

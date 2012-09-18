@@ -3,13 +3,16 @@
     "title" : "Chloi Teams Up with Mozilla&rsquo;s WebFWD",
     "date"  : "July 18, 2012",
     "slug"  : "web-forward",
-    "author": "Brock Whitten"
+    "author": "Brock Whitten",
+    "color" : "purple"
   },
 
   {
     "title" : "Introducing Chloi Inc",
     "date"  : "July 16, 2012",
     "slug"  : "introducing-chloi",
-    "author": "Rob Ellis"
+    "author": "Rob Ellis",
+    "color" : "red"
   }
+  
 ]

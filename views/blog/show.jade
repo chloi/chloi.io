@@ -1,15 +1,17 @@
-.span3
-  .patch
-    .info
-      h2
-        span.words Words
-        span.of of
-        span.chloi
-          span Chloi
-    .logo
-      img(src="chloi-icon-500px.png")
-  br
-  a(href="/") <- more
-.span12.offset1.article
-  != partial("articles/" + article.slug)
+div(class="#{ article.color }")
+  .span3
+    
+    .patch
+      a(href="/")
+        .info
+          h2
+            span.words Words
+            span.of of
+            span.chloi
+              span Chloi
+        .logo
+          img(src="chloi-icon-500px.png")
+
+  .span12.offset1.article
+    != partial("articles/" + article.slug)
 

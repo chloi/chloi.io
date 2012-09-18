@@ -1,6 +1,7 @@
 module.exports = function(app){
   
-  var middleware = [app.middleware.context, app.middleware.published]
+  var middleware  = [app.middleware.context, app.middleware.published]
+  var feed        = [app.middleware.context, app.middleware.published, app.middleware.feed]
   
   app.get("/articles", middleware, function(req, rsp){
     rsp.render("articles", {
@@ -8,12 +9,12 @@ module.exports = function(app){
     })
   })
 
-  // app.get("/articles.atom", middleware, m.feed, function(req, rsp){
-  //   rsp.render("atom", {
-  //     layout: false,
-  //     articles: req.published
-  //   })
-  // })
+  app.get("/articles.atom", feed, function(req, rsp){
+    rsp.render("atom", {
+      layout: false,
+      articles: req.published
+    })
+  })
 
   app.get("/unpublished/:slug", middleware, function(req, rsp){
     if(process.env.NODE_ENV == "production"){

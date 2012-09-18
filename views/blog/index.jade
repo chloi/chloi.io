@@ -2,7 +2,7 @@ h2 Words of Chloi
 
 ul.articles
   each article in articles
-    li
+    li(class="#{ article.color }")
       a(href="/#{ article.slug }")
         span.date(style="text-align:right")= article.date 
         =  article.title 

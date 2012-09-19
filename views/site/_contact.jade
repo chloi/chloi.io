@@ -1,28 +1,35 @@
-#contact.section
+#contact.section.contact
   .container
     .row
       .span12
         h2 Contact Us
-          .btt <a href="#header">Top</a>        
+          .btt <a href="#header">Top</a>
     .row          
       .span7
         iframe.map(width='100%', height='400', frameBorder='0', src='http://a.tiles.mapbox.com/v3/sintaxi.map-hi5mm7hk.html#14.00/49.2839/-123.1164', class="map")
       .span5
         #alert
-          h3 Have a project in mind?
+          h3.contact-form-title Have a project in mind?
         form.messages(method='post', action='/messages')
-          label Name
-          input.span4(type='text', name='name')
-          label Email
-          input.span4(type='text', name='email')
-          label Message
-          textarea.span5(name='body')
-          button.btn.btn-large.btn-danger.pull-right Send
-          
-      .span4
+          label(for='message_name') Name
+          input.span5(type='text', name='name', id='message_name')
 
+          label(for='message_email') Email
+          input.span5(type='text', name='email', id='message_email')
+
+          label(for='message_body') Message
+          textarea.span5(name='body', id='message_body')
+
+          button.btn.btn-large.btn-danger.pull-right Send
 
 #footer
   .container
-    .copy
-      &copy; 2012 Chloi Inc.
+    .row
+      .copy.span4
+        &copy; 2012 Chloi Inc.
+      .phones.span8
+        img(src="/img/ca.png", alt="Canada:")
+        span &nbsp;(778) 786-3735<br />
+        img(src="/img/us.png", alt="US:") 
+        span &nbsp;(415) 692-3507<br />
+        span <a href="http://twitter.com/chloi_inc">@Chloi_Inc</a>

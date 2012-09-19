@@ -7,16 +7,16 @@
           .btt <a href="#header">Top</a>
     .row
       .span8
-        h3 Words of Chloi
+        h3.heading Words of Chloi
         ul.articles
           each article in articles
-            li.article(class="#{ article.color }")
+            li.article-item(class="#{ article.color }")
               a(href="/#{ article.slug }")
                 span.fancy
                 h3.article-title= article.title
                 span.article-meta #{article.date} by #{article.author}
       .span4
-        h3 Twitter
+        h3.heading Twitter
         script(charset="utf-8", src="http://widgets.twimg.com/j/2/widget.js")
         script
           new TWTR.Widget({

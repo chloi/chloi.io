@@ -12,6 +12,11 @@
 }
 
 @font-face {
+  font-family: 'ProximaNovaSemiBold';
+  src: url('../font/ProximaNova-Semibold.otf') format('opentype');
+}
+
+@font-face {
 	font-family: 'ProximaNovaBold';
 	src: url('../font/ProximaNova-Bold.otf') format('opentype');
 }
@@ -27,173 +32,108 @@ body{
 
 
 .patch{
-  a:hover{
-    text-decoration:none;
-  }
   background: @blue;
-  padding:@gridGutterWidth;
-  
-  .info{
-    //min-height: @gridColumnWidth * 8;
-    //border:1px solid #fff;
-    //border-width: 1px 1px 0px;
-    h2{
-      margin:0px;
-      text-transform:uppercase;
-      span.words{
-        font-family:ProximaNovaBold;
-        font-size:18px;
-        line-height:36px;
-        padding-top:2px;
-        color:#333;
-        text-align:center;
-        margin:0px;
-        //border-bottom:1px solid #FFF;
-        display:block;
-        //background:#333;
-        //color:#FFF;
-        
-        border:1px solid #fff;
-        border-width: 1px 1px 1px;
-      }
-      span.of{
-        font-family:ProximaNova;
-        font-size:50px;
-        line-height:51px;
-        padding-top:6px;
-        color:#333;
-        text-align:center;
-        margin:0px;
-        border-bottom:1px solid #FFF;
-        display:block;
-        //background:#fff;
-        
-        border:1px solid #fff;
-        border-width: 0px 1px;
-      }
-      span.chloi{
-        border:1px solid #fff;
-        border-width: 1px 1px 0px;
-        display:block;
-        
-        text-transform:titlecase;
-        font-family:AdelleHeavy;
-        font-size:22px;
-        line-height:46px;
-        color:#333;
-        text-align:center;
-        margin:0px;
-        height:205px;
-        overflow:visible;
-        padding-top:25px;
-        vertical-align:sub;
-        span{
-          text-transform:capitalize;
-          
-          font-size:74px;
-          line-height:74px;
-          //color:#fff;
-          letter-spacing:3px;
-          display:block;
-          margin:0px;
-          padding:0px;
-          vertical-align: sub;
-          -webkit-transform: rotate(90deg);
-          -moz-transform:rotate(90deg);
-          transform:rotate(90deg);
-          -webkit-transform-origin: 44px 29px;
-          filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-        }
-
-      }
-    }
+  padding: @gridGutterWidth;
+  a:hover{
+    text-decoration: none;
   }
-  
-  .logo{
-    clear:both;
-    padding: @gridGutterWidth / 2;
+}
+
+.patch-info{
+  h2{
+    margin: 0px;
+    text-transform: uppercase;
+  }
+  .words{
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    line-height: 36px;
+    padding-top: 2px;
+    color: #333;
+    text-align: center;
+    margin: 0px;
+    display: block;
+    border: 1px solid #fff;
+    border-width:  1px 1px 1px;
+  }
+  .of{
+    font-family: ProximaNova;
+    font-size: 50px;
+    line-height: 51px;
+    padding-top: 6px;
+    color: #333;
+    text-align: center;
+    margin: 0px;
+    border-bottom: 1px solid #FFF;
+    display: block;
+    border: 1px solid #fff;
+    border-width: 0px 1px;
+  }
+  .chloi{
     border:1px solid #fff;
-  }
-}
-
-h2.heading{
-  font-family: ProximaNovaBold;
-  text-transform:uppercase;
-  font-size: 50px;
-  margin:100px 0px 40px 0px;
-}
-
-ul.articles{
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  li{
-    margin-bottom:@gridGutterWidth;
-    .date{
-      padding-right:20px;
+    border-width: 1px 1px 0px;
+    display: block;
+    
+    text-transform: titlecase;
+    font-family: AdelleHeavy;
+    font-size: 22px;
+    line-height: 46px;
+    color: #333;
+    text-align: center;
+    margin: 0px;
+    height: 205px;
+    overflow: visible;
+    padding-top: 25px;
+    vertical-align: sub;
+    span{
+      text-transform: capitalize;
+      font-size: 74px;
+      line-height: 74px;
+      letter-spacing: 3px;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+      vertical-align: sub;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      transform: rotate(90deg);
+      -webkit-transform-origin: 44px 29px;
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
     }
+
   }
-  a{
-    font-size:26px;
-    line-height:42px;  
-    background:pink;
-    padding: @gridGutterWidth;
-    text-decoration:none;
-    color: #FFF;
-  }
-  
+}
+.patch-logo{
+  clear: both;
+  padding: @gridGutterWidth / 2;
+  border: 1px solid #fff;
+}
+.purple .patch { background: @purple; }
+.lime .patch { background: @lime; }
+.blue .patch { background: @blue; }
+.red .patch { background: @red; }
+.orange .patch { background: @orange; }
+
+h1.heading{
+  font-family: ProximaNovaBold;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 100px 0px 40px 0px;
 }
 
 .article{
-  padding-top: @gridColumnWidth * 3;
+  padding-top: @gridColumnWidth * 2;
   padding-bottom: @gridColumnWidth * 5;
-  
   h1{
-    a{
-      font-family: ProximaNovaBold;
-      text-transform:uppercase;
-      color:#333;
-    }
+    font-family: ProximaNovaSemiBold;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
   }
   
   p a{
-    text-decoration:none;
-    border-bottom: 1px solid @purple;
-    color:#333;
+    text-decoration: none;
   }
-}
-
-// index
-
-ul.articles{
-  li.purple a{ background: @purple; }
-  li.lime   a{ background: @lime; }
-  li.blue   a{ background: @blue; }
-  li.red    a{ background: @red; }
-  li.orange a{ background: @orange; }
-}
-
-// article
-
-.purple {
-  .patch{ background: @purple; }
-  .article p a{ border-bottom: 1px solid @purple; }
-}
-.lime {
-  .patch{ background: @lime; }
-  .article p a{ border-bottom: 1px solid @lime; }
-}
-.blue {
-  .patch{ background: @blue; }
-  .article p a{ border-bottom: 1px solid @blue; }
-}
-.red {
-  .patch{ background: @red; }
-  .article p a{ border-bottom: 1px solid @red; }
-}
-.orange {
-  .patch{ background: @orange; }
-  .article p a{ border-bottom: 1px solid @orange; }
 }
 
 // this should stay EOF

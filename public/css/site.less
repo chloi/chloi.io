@@ -445,97 +445,11 @@ p.jumbotron.meetup{
   }
 }
 
-#blog.section{
-  h3{
+#blog{
+  h3.heading{
     font-size:22px;
   }
 }
-
-.articles {
-  list-style-type: none;
-  margin-left: 0;
-}
-.article {
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 15px;
-  .fancy {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: "";
-    width: 10px;
-    height: 100%;
-    background: @orange;
-    z-index: -1;
-  }
-  a {
-    overflow:auto;
-    &:hover{
-      text-decoration: none;
-    }
-  }
-  &:hover {
-    
-  }
-  // Themes
-  &.purple {
-    .fancy {
-      background: @purple;
-    }
-    &:hover {
-      .article-title {
-        color: @purple;
-      }
-    }
-  }
-  &.blue {
-    .fancy {
-      background: @blue;
-    }
-    &:hover {
-      .article-title {
-        color: @blue;
-      }
-    }
-  }
-  &.orange {
-    .fancy {
-      background: @orange;
-    }
-    &:hover {
-      .article-title {
-        color: @orange;
-      }
-    }
-  }
-  &.red {
-    .fancy {
-      background: @red;
-    }
-    &:hover {
-      .article-title {
-        color: @red;
-      }
-    }
-  }
-}
-.article-title,
-.article-meta {
-  padding: 5px;
-}
-.article-title {
-  margin: 0;
-  font-size: 18px;
-  line-height: 24px;
-  padding-bottom: 0;
-}
-.article-meta {
-  font-size: 14px;
-  color: #999;
-  opacity: .8;
-}
-
 
 @import "site/responsive.less";
 

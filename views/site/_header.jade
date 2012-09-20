@@ -8,15 +8,13 @@
       .span9
         .nav-shell
           ul.nav
+            li(class="#{ active == "team" ? "active" : "" }")
+              a(href='/team') Team
+            li(class="#{ active == "projects" ? "active" : "" }")
+              a(href='/projects') Projects
+            li(class="#{ active == "contact" ? "active" : "" }")
+              a(href='/contact') Contact
             li
-              a(href='#what') About
-            //li
-            //  a(href='#blog') Blog
-            li
-              a(href='#services') Services
-            li
-              a(href='#community') Community            
-            li
-              a(href='#contact') Contact
+              a(href='http://words.chloi.io') Blog
             li.number
               a(href='#') 778-786-3735

@@ -35,11 +35,7 @@ app.configure(function(){
   app.use(express.static(__dirname + "/public"))
 })
 
-// --------------------
-// blog routes
-// --------------------
 
-require("./blog/routes")(app)
 
 // --------------------
 // index
@@ -49,9 +45,37 @@ var middleware = [app.middleware.context, app.middleware.published]
 
 app.get("/", middleware, function(req, rsp){
   rsp.render("index", {
+    active: "index",
     articles: req.published
   })
 })
+
+app.get("/team", middleware, function(req, rsp){
+  rsp.render("team", {
+    active: "team",
+    articles: req.published
+  })
+})
+
+app.get("/projects", middleware, function(req, rsp){
+  rsp.render("projects", {
+    active: "projects",
+    articles: req.published
+  })
+})
+
+app.get("/contact", middleware, function(req, rsp){
+  rsp.render("contact", {
+    active: "contact",
+    articles: req.published
+  })
+})
+
+// --------------------
+// blog routes
+// --------------------
+
+require("./blog/routes")(app)
 
 // --------------------
 // contact form

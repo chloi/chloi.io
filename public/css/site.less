@@ -459,3 +459,70 @@ p.jumbotron.meetup{
   margin-top: 20px;
   text-align: right;
 }
+
+.section-heading {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.featured-project {
+  background: @yellow;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+.featured-image {
+  img {
+    border: @greyDark solid 10px;
+    .box-sizing(border-box);
+  }
+}
+.featured-content {
+  background: @white;
+  height: 265px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding: 20px;
+  padding-top: 40px;
+  h3 {
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    a {
+      &:hover {
+
+      }
+    }
+  }
+  p {
+    margin: 0 0 1em 0;
+  }
+}
+.featured-cta {
+  text-align: center;
+}
+.projects {
+  .span6:nth-child(2n+1) {
+    clear: both;
+  }
+}
+.project {
+  border-left: @greyDark solid 10px;
+  padding: 5px 0 5px 10px;
+  margin-bottom: 40px;
+  h3 {
+    margin: 0
+  }
+  p {
+    margin: 0 0 1em 0;
+  }
+  &.blue {
+    border-left-color: @blue;
+  }
+  &.red {
+    border-left-color: @red;
+  }
+  &.orange {
+    border-left-color: @orange;
+  }
+}

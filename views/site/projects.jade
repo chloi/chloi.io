@@ -1,31 +1,48 @@
-#community.section
+#projects.section
   .container
     .row
       .span12
-        h2 Community
+        h2 Projects
     .row
+      .span12
+        h3.section-heading Featured Project
+  .featured-project
+    .container
+      .row
+        .span7
+          .featured-image
+            a(href="#")
+              img(src="/img/harp-image.jpg")
+        .span5
+          .featured-content
+            h3
+              a(href="#") Harp Platform
+            p The first front-end as a service. Deploying apps has never been so easy.
+            p Simply edit your HTML, CSS, and JavaScript files in your Dropbox and harp takes care of the rest.
+            p Request a private beta at 
+              a(href="http://harp.io/") harp.io
+            p.featured-cta
+              a.btn.btn-danger.btn-large(href="#") Visit the Website
+  .container
+    .row
+      .span12
+        h3.section-heading Other Projects
+    .row.projects
       .span6
-        h3 Free and Open
-        p Whether it&rsquo;s contributing code, reporting bugs, or fostering your own project, the advantages of leveraging and contributing to the open source community are undeniable. Don&rsquo;t be a relic of the past and ignore the amazing opportunities that free and open source brings. Having troubles getting started? Contact us today and we will help you move forward.
-        h3 Meetups
-        p You are likely to find us at a local meetup such as <a href="http://www.meetup.com/vancouver-javascript-developers/">VanJS</a> or the <a href="http://www.meetup.com/erlang-vancouver/">Vancouver Erlang Group</a>. We also organize the Node Brigade. If you have a talk idea or would like us to speak at your event, please reach out to us.
-        div(style="padding:32px 40px 0px")
-          a(href='http://meetup.com/node-brigade-vancouver', target='_blank')
-            img(src="img/node-brigade-logo-500px.png", width="100%;")
-        p.jumbotron.meetup
-          a(class='btn btn-success btn-large', href='http://meetup.com/node-brigade-vancouver') Learn more on Meetup.com
-      .span5.offset1
-        h3
-          a(href="http://phonegap.com") PhoneGap
-        p PhoneGap was invented and first authored by Chloi founders <a href="http://sintaxi.com" target="_blank">Brock Whitten</a> and <a href="http://silentrob.me" target="_blank">Rob Ellis</a>, along with Eric Oesterle at iPhoneDevCamp 2. Renamed as Cordova, the project is now thriving as <a href="http://incubator.apache.org/cordova/" target="_blank">part of the Apache foundation</a>.
-        
-        h3
-          a(href="http://xuijs.com") XUI
-        p After PhoneGap was created it was quickly realized current DOM manipulation libraries were not sufficient under the constraints of mobile devices. Championed by Rob Ellis in 2009, XUI remains a go to tool for many applications and laid the foundation for alternatives such as ZeptoJS.
-        h3
-          a(href="https://github.com/sintaxi/node-dbox") dbox
-        p Dbox is a NodeJS SDK for the official Dropbox API. It abstracts the irrelevant detail of speaking to a REST API while exposing the bits that are important, such as status code and body.
-        //h3
-        //  a(href="http://harpjs.com") Harp JS
-        //p Harp is a new UI and App Framework developed specifically for PhoneGap and Mobile. Contact us below to get early access.
-
+        .project.blue
+          h3 
+            a(href="#") dbox
+          p NodeJS SDK for Dropbox API. <br />Featured in <a href="https://www.dropbox.com/developers/reference/sdk">Dropbox website</a> as “the” NodeJS SDK to talk to Dropbox API.
+          a.project-cta.btn.btn-success(href="#") View it on Github
+      .span6
+        .project.orange
+          h3
+            a(href="#") Rolodex
+          p Node user management system using redis.
+          a.project-cta.btn.btn-success(href="#") View it on Github
+      .span6
+        .project.red
+          h3 
+            a(href="#") dbox
+          p JavaScript functional style object filtration and validation system.
+          a.project-cta.btn.btn-success(href="#") View it on Github

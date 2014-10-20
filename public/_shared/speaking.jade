@@ -4,21 +4,18 @@ for talk, slug in public.speaking._data
     - talk.slug = slug
     - talks.push(public.speaking._data[slug])
 
-continues = ["Continue to", "More on", "Keep reading"]
-
 ul.post-list#speaking
   //- for each talk in the _data.json file in public/speaking
   for talk in talks.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; }).slice(0, limit)
     if (environment==='production' && talk.published !== false) || (environment==='development')
       author = public.team._data[talk.author]
       li.post-item
-        //- img.post-author-image(src="http://avatars.io/email/#{ author.email }?size=large", alt="A photo of #{ author.name }")
+        img.post-author-image(src="http://avatars.io/email/#{ author.email }?size=large", alt="A photo of #{ author.name }")
         h2.post-title: a(href="#{ talk.url ? talk.url : slug }")= talk.title
         .post-meta
           p
-            a(href="#{ author.url }") #{ author.name }
+            a(href="http://twitter.com/#{ author.twitter }") #{ author.name }
             |  at #{ talk.loc } on&nbsp;
             time.post-time(datetime="#{ talk.date }") #{ talk.date }
-        //-
           if talk.desc
             p.post-desc--light !{ talk.desc }

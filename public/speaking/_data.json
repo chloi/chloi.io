@@ -1,4 +1,28 @@
 {
+  "seattle-startup-week": {
+    "title": "Building, Deploying, and Scaling Node.js Apps / Seattle Startup Week",
+    "author": "sintaxi",
+    "url": "http://www.meetup.com/Seattle-Node-js/events/210801942/",
+    "date": "Oct 22, 2014",
+    "loc": "Seattle Node.js",
+    "desc": "As part of Seattle Startup Week, the Seattle Node.js Meetup is going to hold a very special evening focused on Node.js in production with talks and panel discussion."
+  },
+  "brian-and-brocks-app-adventure": {
+    "title": "Brian and Brock’s App Adventure",
+    "author": "sintaxi",
+    "url": "http://gotocon.com/aarhus-2014/presentation/Brian%20and%20Brock's%20App%20Adventure",
+    "date": "Sept 30, 2014",
+    "loc": "GOTO Aarhus",
+    "desc": "The mobile web has moved at a breakneck pace the last couple years. With the development of ES6, client-side module loading, package management, and pre-compilers quickly becoming the norm, its becoming increasingly difficult to keep up.<br/>In this 2 part session, Brian LeRoux and Brock Whitten will unlock the deepest secrets of the illusive “asset pipeline” and what you need to know to take your next steps into the emerging world of the mobile web."
+  },
+  "efficient-web-type-c-1556-condensed": {
+    "title": "Efficient Web Type, c. 1556",
+    "author": "kennethormandy",
+    "url": "http://typecon.com",
+    "date": "August 3, 2014",
+    "loc": "TypeCon2014: Capitolized",
+    "desc": "This talk draws draws from a 450 year-old lessons of efficient type design, and introduces the practical improvements the Web Open Font Format 2.0 will bring to designers and developers."
+  },
   "efficient-web-type-c-1556-condensed": {
     "title": "Efficient Web Type, c. 1556",
     "author": "kennethormandy",

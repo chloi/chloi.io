@@ -2,5 +2,9 @@
   "name": "chloi-website",
   "version": "1.0.0",
   "dependencies": {
+  },
+  "scripts": {
+    "start": "harp server",
+    "deploy": "harp compile . ~/Dropbox/harp.io/apps/chloi.harp.io/public && rm -rf ~/Dropbox/harp.io/apps/chloi.harp.io/public/node_modules"
   }
 }

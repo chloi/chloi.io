@@ -1,4 +1,4 @@
-ul.media-grid.wide-container
+ul.media-grid
   each project, slug in public.open._data
     if project.published !== false && (limit > 0 || typeof(limit)=='undefined')
       if limit

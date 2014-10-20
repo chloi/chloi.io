@@ -6,7 +6,7 @@
 }
 
 .header {
-  @include row();
+  @include row;
   margin-left: $gutter / 2;
   margin-right: $gutter / 2;
   height: rem(6.25);
@@ -47,7 +47,7 @@
 }
 
 .media-more {
-  @include row();
+  @include row;
 }
 
 .media-list-item {
@@ -77,27 +77,26 @@
 @include media($mid) {
 
   .header {
-    @include row(block, RTL);
-    margin-left: $gutter;
-    margin-right: $gutter;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .header-container {
-    // @include span-columns(2);
+    @include span-columns(2 of 8);
+    @include shift(1 of 8);
   }
 
   .nav {
-    transform: translate(none);
-    @include span-columns(5);
+    @include span-columns(5 of 8);
+    @include shift(-1);
   }
 
   .main-container {
     @include row;
     @include shift(1);
     @include span-columns(6);
-    padding-left: $gutter;
-    padding-right: $gutter;
-    margin-bottom: 1.188em;
+    margin-bottom: 1.25em;
+    padding-top: 3.25em;
   }
 
   .aside {
@@ -107,9 +106,8 @@
 
   .media-grid {
     @include pad(0 ($gutter / 2) default);
-    @include row();
-    @include span-columns(8 of 6);
-    @include shift(-1);
+    @include span-columns(10 of 8);
+    @include shift(-1 of 8);
   }
 
   .media-grid-item {
@@ -122,28 +120,30 @@
 @include media($wide) {
 
   .header {
-    @include row(block, RTL);
+    @include row;
   }
 
   .header-container {
-    // @include span-columns(3);
-    @include shift(1);
+    @include span-columns(3 of 9);
+    @include shift(1 of 9);
   }
 
   .nav {
-    @include span-columns(5);
-    @include shift(1);
+    @include shift(0);
+    @include span-columns(5 of 9);
   }
 
   .main-container,
   .knockout-container {
-    @include row();
+    @include row;
   }
 
   .main-container {
-    @include shift(1);
-    @include span-columns(5);
+    padding: 0;
     padding-top: $gutter * 2.5;
+    @include shift(1 of 9);
+    @include span-columns(5 of 9);
+
   }
 
   .aside {

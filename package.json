@@ -1,6 +1,7 @@
 {
-  "name": "chloi-website",
-  "version": "1.0.0",
+  "name": "chloi.io",
+  "version": "2.0.0",
+  "private": true,
   "dependencies": {
   },
   "scripts": {

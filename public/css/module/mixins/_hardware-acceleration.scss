@@ -1,0 +1,16 @@
+// Forces the browser to render animation on the element with hardware acceleration
+@mixin enable-hardware-acceleration {
+  -webkit-transform:translate3d(0,0,0); // < iOS6
+
+  -webkit-transform: translateZ(0);
+  // -webkit-perspective: 1000;
+  // -webkit-backface-visibility: hidden;
+}
+
+@mixin disable-hardware-acceleration {
+	//-webkit-transform:translate3d(none); // < iOS6
+
+	-webkit-transform: translateZ(none);
+	// -webkit-perspective: none;
+	// -webkit-backface-visibility: none;
+}

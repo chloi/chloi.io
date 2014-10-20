@@ -1,12 +1,6 @@
 {
   "name": "chloi-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dependencies": {
-    "express": "",
-    "less": "",
-    "jade": "",
-    "request": "",
-    "markdown": "",
-    "validator": "0.2.8"
   }
 }

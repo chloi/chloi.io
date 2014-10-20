@@ -1,0 +1,26 @@
+{
+  "domains": ["chloi.io"],
+  "globals": {
+    "title": "Chloi Inc.",
+    "name": "Chloi Inc.",
+    "tagline": "",
+    "description": "Chloi Inc. is a software design and engineering studio in Vancouver, BC, founded by the co-creators of PhoneGap.",
+    "keywords": ["node.js", "node", "phonegap", "apache cordova", "cordova", "development", "design", "vancouver", "workshops", "open source", "harp", "harpjs"],
+    "author": {
+      "name":   "Chloi Inc.",
+      "email":  "info@chloi.io",
+      "phone": {
+        "ca": "778 786 3735",
+        "us": "415 692 3507"
+      },
+      "url":    "http://chloi.io",
+      "twitter": "chloi_inc",
+      "github": "chloi",
+      "meetup": ["node-brigade-vancouver", "css-brigade"]
+    },
+    "service": {
+      "typekit": "fmk6cnx",
+      "analytics": "UA-31448767-1"
+    }
+  }
+}

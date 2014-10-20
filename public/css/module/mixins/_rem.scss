@@ -1,0 +1,31 @@
+@mixin rem($property, $values) {
+	$px : ();
+	$rem: ();
+	@each $value in $values {
+		@if $value == 0 or $value == auto or $value == none or $value == inherit {
+	    	$px : append($px , $value);
+			$rem: append($rem, $value);
+		} @elseif type-of($value) == "number" {
+			$unit: unit($value);
+			$val: $value; // used to be parseInt value
+			@if $unit == "px" {
+				$px : append($px, $value);
+				$rem: append($rem, ($val / $default-font-size + rem));
+			}
+			@if $unit == "rem" {
+				$px : append($px, ($val * $default-font-size + px));
+				$rem: append($rem, $value);
+			}
+			@if $unit == "" {
+				$px : append($px, ($val * $default-font-size) + px);
+				$rem: append($rem, ($val + rem));
+			}
+		}
+	}
+	@if $px == $rem {
+		#{$property}: $px;
+	} @else {
+		#{$property}: $px;
+		#{$property}: $rem;
+	}
+}

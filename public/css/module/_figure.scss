@@ -1,0 +1,129 @@
+// Figure
+// ------
+
+// The project page and blog module
+// for laying out images and captions
+// in interesting ways
+// This will get switched to kennethormandy/figment
+
+figure {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  @include row;
+  clear: both; // Necessary?
+}
+
+figcaption {
+  @include row;
+  display: block;
+  margin-top: 1em;
+  font-style: normal;
+}
+
+.figure-border img,
+img.figure-border {
+    display: block;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
+
+@include media($mid) {
+
+  img.figure-large,
+  figure.figure-large {
+    @include span-columns(9 of 7);
+    @include shift(-1);
+    figcaption {
+      @include span-columns(7 of 9);
+      @include shift(1);
+    }
+
+  }
+
+}
+
+@include media($wide) {
+
+  .figure-aside {
+    @include span-columns(8 of 5);
+    img {
+      @include span-columns(5 of 8);
+    }
+    figcaption {
+      @include span-columns(3 of 8);
+    }
+  }
+
+  img.figure-large,
+  figure.figure-large {
+    @include span-columns(8 of 5);
+    @include shift(-1 of 5);
+    figcaption {
+      @include span-columns(5 of 8);
+      @include shift(1);
+    }
+  }
+
+  figcaption {
+    @include span-columns(8 of 8);
+  }
+
+  .figure-overlay {
+    position: relative;
+    @include span-columns(9);
+    figcaption {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      margin-top: 0;
+      padding: 1em 1em + $gutter 1em 1em;
+      width: auto;
+      max-width: 60%;
+      float: left;
+      display: block;
+      text-shadow: 0 1px 5px $chloi-white;
+      a, a:visited {
+        color: darken($color-link-default, 20%);
+        &:hover,
+        &:focus {
+          color: $color-link-hover;
+        }
+        &:active {
+          color: $color-link-active;
+        }
+      }
+    }
+  }
+
+  .figure-overlay--dark {
+    figcaption {
+      text-shadow: 0;
+      background: $color-background;
+      a, a:visited {
+        color: $color-link-default;
+      }
+    }
+  }
+
+  .figure-overlay.figure-large {
+    // Duplicate figure-large stuff
+    @include span-columns(8 of 5);
+    @include shift(-1 of 5);
+    figcaption {
+      width: auto;
+      @include shift(0);
+    }
+  }
+
+  .figure-large.figure-aside {
+    @include span-columns(9 of 5);
+    img {
+      @include span-columns(7 of 9);
+    }
+    figcaption {
+      @include shift(0);
+      @include span-columns(2 of 9);
+    }
+  }
+
+}

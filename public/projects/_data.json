@@ -1,0 +1,43 @@
+{
+  "harp-platform": {
+    "title": "Harp Platform",
+    "tagline": "Harp Platform",
+    "description": "Our front-end publishing platform integrated with Dropbox. Built-in preprocessing, Clean <abbr>URLs</abbr>, Custom Domains and <abbr>SSL</abbr> for every application.",
+    "opening": {
+      "banner": "banner.svg",
+      "title": false,
+      "teaser": "wordmark.svg"
+    }
+  },
+  "harp": {
+    "title": "Harp",
+    "tagline": "Harp, the static web server with built-in preprocessing",
+    "description": "Harp, the static web server with built-in preprocessing, makes Markdown, <abbr>LESS</abbr>, CoffeeScript, and more, as easy to use as <abbr>HTML</abbr>, <abbr>CSS</abbr>, and JavaScript.",
+    "opening": {
+      "banner": "banner.svg",
+      "title": false,
+      "teaser": "wordmark.svg"
+    }
+  },
+  "webty_pe-journal": {
+    "title": "webty.pe: A Journal of Typography &amp; the Screen",
+    "tagline": "Extending the history of web typography",
+    "description": "webty.pe is a publication about print and screen typography, together. We presented it as a digital publication and a printed magazine.",
+    "opening": {
+      "title": true,
+      "banner": "webty_pe-on-the-shelf.jpg",
+      "teaser": "wordmark.svg"
+    }
+  },
+  "awkward-stage-productions": {
+    "published": false,
+    "title": "Awkward Stage Productions",
+    "tagline": "Redefining Awkward",
+    "description": "Awkward Stage Productions is a non-profit theatre company. Its organisers create oppertunities for youth interested in theatre performance and production, helping them to move from education to employment. ",
+    "opening": {
+      "title": true,
+      "banner": "bunked-the-musical-tent-photo.jpg",
+      "teaser": "bunked-the-musical-tent-photo.jpg"
+    }
+  }
+}

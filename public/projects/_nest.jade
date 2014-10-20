@@ -1,0 +1,13 @@
+.container
+  unless published === false
+    .opening(class="#{ published === false ? 'post-unpublished' : '' }#{ opening.banner && opening.banner.split('.')[1]==='jpg'?'opening-overlay':'opening-standalone' }")
+      if opening.banner
+        img.opening-image(src="/images/#{ current.source }/#{ opening.banner }", alt="")
+      header.opening-header
+        .opening-container.main-container
+          h1.opening-title(class="#{ opening.title === false ? 'opening-title-hidden' : '' }#{ title.length > 30 ? 'opening-title-long' : '' }")!= title
+    article.main-container.post
+      != yield
+      != partial("../_shared/more-contact")
+  else
+    .main-container!= partial("../404")

@@ -1,0 +1,99 @@
+// Media
+// -----
+
+// The media object with extensions
+// for grid and list layouts
+
+.media-list,
+.media-grid {
+  list-style: none;
+  margin-top: 2em;
+}
+
+.media-list-item,
+.media-grid-item {
+  margin-bottom: $gutter;
+}
+
+.media {
+  display: block;
+  @include fill-parent;
+  padding: 0;
+}
+
+.media-image {
+  text-align: center;
+}
+
+.media-image-title {
+  padding: 2.9em 2em;
+  display: block;
+  font-size: 1.25em;
+  margin: 0;
+  line-height: 1.1;
+}
+
+
+.media-caption,
+a .media-caption {
+  @include rem(font-size, 16px);
+  background: $color-caption;
+  padding: $gutter $gutter ($gutter * 1.05) $gutter;
+  p, ul, ol, li {
+    color: $color-text;
+  }
+}
+
+.media-caption-title {
+  font-family: $font-family-sans;
+  font-style: normal;
+  display: inline;
+}
+
+.media-caption-header {
+  display: block;
+  font-family: $font-family-sans;
+  font-style: normal;
+  margin-bottom: 0.932em;
+}
+
+.media-more {
+  // @extend .meda-caption
+  clear: left;
+  @include media($wide) {
+    padding: 0;
+    background: transparent;
+  }
+  & p {
+    color: $color-text;
+  }
+}
+
+.media-more-contact {
+  background: $color-caption;
+  padding: $gutter $gutter ($gutter/2) $gutter;
+  @include span-columns(4 of 4);
+  // @include media($wide) {
+  //   @include span-columns(3 of 5);
+  //   @include shift(5 of 5);
+  //   height: 150px;
+  //   margin-top: -150px;
+  // }
+}
+
+.media-stats {
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.media-stat {
+  display: inline-block;
+  // border: 1px solid lighten($chloi-blue, 26%);
+  // padding: 0.25em 0.5em;
+  // border-radius: $base-border-radius;
+  margin-left: 0;
+  // padding-left: 0;
+  margin-right: 0.5em;
+  font-feature-settings: "pnum" 1, "tnum" 1, "kern" 1, "liga" 1;
+}

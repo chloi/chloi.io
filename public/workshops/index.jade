@@ -1,0 +1,36 @@
+.container
+  .opening
+    img.opening-image(src="../images/opening.jpg" alt="")
+    header.opening-header
+      .opening-container.main-container
+        h1.opening-title Professional<br/>Workshops
+
+  .main-container
+    :markdown
+
+      Whether you team is comprised of __Node.js__ developers ready to move to the next level, or engineers who are ready to transition to JavaScript and Node.js, we can help.
+
+      We offer professional training, consulting, and practical talks structured around your company’s needs, for developers with various skills. Sessons are run by PhoneGap / Cordova co-creators and former Joyent Engineers [Brock Whitten](http://github.com/sintaxi) and [Rob Ellis](http://github.com/silentrob).
+
+      We’re happy to discuss what kind of workshop or consulting __your team will benefit from__ the most.&nbsp;__[Contact us.](mailto:info@chloi.io?subject=Workshop)__
+
+    h2#meetups Community Meetups
+    :markdown
+
+      Our experience extends into organizing education events, as well. Chloi Inc. helps organise three popular and completely free meetups in Vancouver: __Node Brigade__, __CSS Brigade__, and __Type Brigade__.
+
+    != partial("../_shared/events")
+    :markdown
+
+      ## Speaking
+
+      The Chloi Inc. team speaks regularly at events—close to home in Vancouver, to <abbr>DC</abbr>, and as far away as Argentina. If you’re looking for speakers, [let us know.](mailto:info@chloi.io?subject=Workshop)
+
+    != partial("../_shared/speaking")
+
+  aside#js-cta.js-cta
+    a(href="mailto:info@chloi.io?subject=Workshops%20with%20Chloi").aside.aside--promo
+      .wordmark(href="/")!=partial("../images/wordmark.svg.ejs")
+      h4 Get your team ready for its next engineering challenge.
+      p We teach, consult, and run in-house workshops for teams using or starting with Node.js and PhoneGap.
+      strong Speak with&nbsp;us

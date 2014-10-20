@@ -1,0 +1,18 @@
+{
+  "blog": {
+    "title": "Blog",
+    "description": "Writing about Node.js, static apps, product design, typograhpy, and more."
+  },
+  "open": {
+    "title": "Open Source",
+    "description": "From Apache Cordova / PhoneGap through to Harp, take a look at the open source projects Chloi Inc. started."
+  },
+  "contact": {
+    "title": "Contact Chloi Inc.",
+    "description": "Get in touch with us, or come say here “Hi!” here in Vancouver, BC."
+  },
+  "workshops": {
+    "title": "Node.js Workshops and Consulting",
+    "description": "We offer professional training, consulting, and practical talks structured around your company’s needs, for developers with various skills."
+  }
+}

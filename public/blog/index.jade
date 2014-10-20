@@ -1,0 +1,10 @@
+.container
+  .main-container
+    h1 Blog
+    != partial("../_shared/blog")
+
+  aside#js-cta.js-cta
+    a(href="../contact").aside.aside--promo
+      .wordmark(href="/")!=partial("../images/wordmark.svg.ejs")
+      h4.aside-title Writing from experience
+      p Designing and developing web and mobile applications, sensible APIs, and strong visual identities. <strong>Speak with&nbsp;us</strong>

@@ -1,0 +1,73 @@
+// Post
+// ----
+
+// Blog post listings
+
+.post-list,
+.post-item {
+  list-style: none;
+}
+
+.post-list {
+  margin-bottom: 2.44em;
+  //- Replace with media-list?
+}
+
+.post-item {
+  margin-bottom: 1em;
+}
+
+.post-title {
+  margin-bottom: 0;
+}
+
+.post-desc--light {
+  margin-top: $base-line-height * 0.25em;
+  color: $chloi-grey;
+  font-style: italic;
+}
+
+.post-meta {
+  @include row();
+}
+
+.post-time {
+}
+
+.post-desc {
+  margin-bottom: 3em;
+}
+
+.post-author-image {
+  width: 2em;
+  display: inline-block;
+  margin-right: $gutter / 2;
+  border-radius: $base-border-radius;
+  display: none;
+  visibility: hidden;
+  @include media($mid) {
+    display: block;
+    visibility: visible;
+    @include span-columns(1);
+    @include shift(-1);
+  }
+  + .media-caption {
+    @include shift(1);
+    outline: 1px solid red;
+  }
+}
+
+.post-item-unpublished,
+.post-unpublished {
+  .post-item-title,
+  .opening-title {
+    &:after {
+      content: "unpublished";
+      font-style: italic;
+      font-weight: normal;
+      font-size: 0.33em;
+      margin-left: 0.5em;
+      vertical-align: super;
+    }
+  }
+}

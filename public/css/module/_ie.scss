@@ -1,0 +1,58 @@
+// IE
+// --
+
+// Quick fixes to make the mobile-first
+// layout work a little better in IE7 and 8
+
+.ie {
+  .header {
+    padding: -1em 0; // 0.932em
+  }
+  .logo {
+    height: 5em; // msem(5)
+    display: block;
+    width: auto;
+    @include clearfix;
+    // background: transparent url("../images/monogram-small.png") no-repeat top left;
+    .flag-body {
+      padding-left: 6em; // msem(6)
+      width: 75%;
+      display: block;
+    }
+  }
+  .logo-monogram {
+    display: none;
+  }
+  .nav {
+    margin-top: 0 !important; // override js
+    transform: translate(none);
+    @include span-columns(3, 5);
+    // @include span-columns(3 omega, 5);
+    @include clearfix;
+    overflow: visible;
+    float: right;
+  }
+  .nav-list {
+    margin-right: none;
+    float: right;
+  }
+  .nav-list-item {
+    display: list-item;
+    line-height: 3.109; // ms(4)
+    border-bottom: none;
+    float: left;
+    clear: none !important;
+  }
+  .nav-list-item-link {
+    @include rem(font-size, 1); // ms(0) // If this is change, ms(2) must be changed below
+    line-height: 3.5; // ms(5) * (7/10) // lessen line-height by one thrid
+    padding: 0 -1em 0.3em -1em; // 0 0.932em #{ms(0, (3/10)) + em} 0.932em // and add it to bottom to vertically centre
+  }
+  .nav-toggle {
+    display: none;
+    visibility: hidden;
+  }
+  .media-image {
+    width: 100%;
+  }
+}

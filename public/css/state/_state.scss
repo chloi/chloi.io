@@ -1,0 +1,17 @@
+// State
+// =====
+
+.is-visible,
+.js-cta.is-visible {
+  .aside--promo {
+    animation: fadeInDropIn 0.5s ease-in-out 0s;
+    opacity: 1.0;
+  }
+}
+
+.is-hiddenMid {
+  @include media($mid) {
+    display: none;
+    visibility: hdiden;
+  }
+}

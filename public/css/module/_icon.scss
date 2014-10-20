@@ -1,0 +1,37 @@
+// Icons
+// -----
+
+// Basic styles for the icons on the
+// open source and workshop pages
+
+.icon {
+  &:before {
+    display: inline-block;
+    color: transparent;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    margin-right: 0.25em;
+  }
+}
+
+.icon--star {
+  &:before {
+    content: "★";
+    background: url(../images/icons/icon-star.svg) no-repeat top left;
+  }
+}
+
+.icon--fork {
+  &:before {
+    content: "⋔";
+    background: url(../images/icons/icon-fork.svg) no-repeat top left;
+  }
+}
+
+.icon--member {
+  &:before {
+    content: "";
+    background: url(../images/icons/icon-member--dark.svg) no-repeat top left;
+  }
+}

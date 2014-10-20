@@ -1,0 +1,20 @@
+nav#nav.nav(role="navigation")
+  ul.nav-list
+    li.nav-item.nav-item--skip
+      a.nav-link.nav-skip(href="#main") Skip to content
+    li.nav-item.is-hiddenMid
+      a.nav-link(href="/") Home
+    //- li.nav-item(class=current.path[0] === 'projects' ? 'is-active' : '')
+    //-   a.nav-link(href="/projects") Projects
+    li.nav-item(class=current.path[0] === 'projects' ? 'is-active' : '')
+      a.nav-link(href="/workshops") Workshops
+    li.nav-item(class=current.path[0] === 'open' ? 'is-active' : '')
+      a.nav-link(href="/open") Open Source
+    li.nav-item(class=current.path[0] === 'blog' ? 'is-active' : '')
+      a.nav-link(href="/blog") Blog
+    //- li.nav-item
+    //-   a.nav-link(href="/training") Training
+    li.nav-item
+      a.nav-link(href="/about") About
+    li.nav-item(class=current.path[0] === 'contact' ? 'is-active' : '')
+      a.nav-link(href="/contact") Contact

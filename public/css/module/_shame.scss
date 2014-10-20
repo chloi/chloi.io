@@ -1,0 +1,160 @@
+// Shame
+// -----
+
+// If you can’t even, it goes here.
+
+
+// Proportional phone numbers
+// Experiment for Normalize-OpenType.css
+a[href^="tel:"] {
+  font-feature-settings: "tnum" 1, "pnum" 1, "kern" 1;
+}
+p {
+  a[href^="tel:"] {
+    font-feature-settings: "onum" 1, "kern" 1;
+  }
+}
+
+
+// Map
+// ---
+
+// Used on the contact page
+
+.map {
+  display: block;
+  width: 100%;
+  height: em(250px);
+  @include media($mid) {
+    height: em(500px);
+  }
+}
+
+.map-caption {
+  font-size: 0.85em;
+  font-style: normal;
+  address {
+    font-style: normal;
+  }
+}
+
+// Footer
+// ------
+
+// Makes the footer less prominent
+
+.footer {
+  color: $chloi-grey;
+  a, a:visited {
+    color: $chloi-black;
+  }
+  .open & {
+    color: lighten($color-primary, 15);
+    a, a:visited {
+      color: lighten($color-primary, 26);
+    }
+  }
+}
+
+// Event
+// -----
+
+// Event specific styles for our meetups
+
+.event-css-brigade {
+  background: $chloi-blue;
+  .media-image {
+    color: $chloi-white;
+  }
+}
+
+.event-node-brigade {
+  background: $chloi-grey;
+  .media-image {
+    color: $chloi-white;
+  }
+}
+
+.event-type-brigade {
+  background: $chloi-beige;
+  .media-image {
+    color: $chloi-white;
+  }
+}
+
+// Helpers
+// -------
+
+@include media(max-width $narrow-width $narrow-col) {
+
+  .is-hidden-when-small {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+@include media($mid) {
+
+  .is-hidden-when-large {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+// Wordmark
+// --------
+
+// The Chloi logo
+
+.wordmark {
+  margin: 0;
+  display: block;
+  position: relative;
+  height: 100%;
+  // max-width: em(500px);
+  // max-height: em(100px);
+  // height: em(100px);
+  img,
+  svg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    float: left;
+    display: block;
+    max-height: em(100px);
+    fill: $color-background;
+    .wordmark-background {
+      fill: $color-primary;
+    }
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+    svg .wordmark-background {
+      fill: $color-highlight;
+    }
+  }
+}
+
+// Nav?
+// ----
+
+.horizontal-list {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    &:after {
+      content: ",\00A0";
+    }
+    &:last-child {
+      &:after {
+        content: "";
+      }
+    }
+
+  }
+}

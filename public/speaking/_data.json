@@ -1,0 +1,66 @@
+{
+  "efficient-web-type-c-1556-condensed": {
+    "title": "Efficient Web Type, c. 1556",
+    "author": "kennethormandy",
+    "url": "http://typecon.com",
+    "date": "August 3, 2014",
+    "loc": "TypeCon2014: Capitolized",
+    "desc": "This talk draws draws from a 450 year-old lessons of efficient type design, and introduces the practical improvements the Web Open Font Format 2.0 will bring to designers and developers."
+  },
+  "efficient-web-type-c-1556-extended": {
+    "title": "Efficient Web Type, c. 1556",
+    "author": "kennethormandy",
+    "url": "http://lighthouselabs.ca",
+    "date": "June 26, 2014",
+    "loc": "Lighthouse Labs",
+    "desc": "This version of <em>Efficient Web Type, c. 1556</em> draws from a 450 year-old lessons of efficient type design, and introduces the practical improvements the Web Open Font Format 2.0 will bring to designers and developers."
+  },
+  "brian-and-brocks-app-adventure": {
+    "title": "Brian and Brock’s App Adventure",
+    "author": "sintaxi",
+    "url": "http://gotocon.com/chicago-2014/presentation/Brian%20and%20Brock's%20App%20Adventure",
+    "date": "May 21, 2014",
+    "loc": "GOTO Chicago",
+    "desc": "In this two-part session, Adobe PhoneGap lead Brian LeRoux, and PhoneGap co-creator Brock Whitten, will unlock the deepest secrets of the illusive “asset pipeline” and what you need to know to take your next steps into the emerging world of the mobile web."
+  },
+  "efficient-web-type-c-1556": {
+    "title": "Efficient Web Type, c. 1556",
+    "author": "kennethormandy",
+    "url": "http://www.meetup.com/Vancouver-Web-Performance/events/180105582/",
+    "date": "May 12, 2014",
+    "loc": "Vancouver Web Performance",
+    "desc": "This talk draws draws from a 450 year-old lessons of efficient type design, and introduces the practical improvements the Web Open Font Format 2.0 will bring to designers and developers."
+  },
+  "flexbox-and-what-you-can-do-with-it": {
+    "title": "Flexbox and what you can do with it",
+    "author": "jorgepedret",
+    "url": "http://www.meetup.com/Vancouver-HTML5/events/161590812/",
+    "date": "Feb 3, 2014",
+    "loc": "Vancouver HTML5",
+    "desc": "Jorge will give a quick introduction to the CSS Flexbox, covering subjects like browser support, as well as when and when not to use them."
+  },
+  "lessons-learned-building-the-harp-platform": {
+    "title": "Lessons learned building the Harp Platform",
+    "author": "sintaxi",
+    "url": "http://rubyconfargentina.org/en/program.html",
+    "date": "Nov 27, 2013",
+    "loc": "RubyConf Argentina",
+    "desc": "In software, when complexity is tamed there is no limit to what can be achieved. In this talk I will share the importance of modularity, why we avoided REST, and how we used messaging to build a distributed system, while keeping complete transparency across our network."
+  },
+  "designers-hate-whitespace": {
+    "title": "Designers Hate Whitespace",
+    "author": "kennethormandy",
+    "url": "http://cssbrigade.com/events/3",
+    "date": "Oct 19, 2013",
+    "loc": "CSS Brigade",
+    "desc": "Preprocessors allow us to write a more thoughtful version of our CSS, yet we rarely use ones with a whitespace sensitive syntax. This talk explores the theory designers hold dear, and the syntax they don’t."
+  },
+  "css-element-queries": {
+    "title": "CSS Element Queries",
+    "author": "jorgepedret",
+    "url": "http://cssbrigade.com/events/2",
+    "date": "Aug 19, 2013",
+    "loc": "CSS Brigade",
+    "desc": "This talk will look at how element queries will change the way we create components, techniques that we can use today and lastly show you how they fit in the big picture of web components."
+  }
+}

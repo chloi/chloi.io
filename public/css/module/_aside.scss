@@ -1,0 +1,69 @@
+// Aside
+// -----
+
+// This is the module for the appearing
+// promos on blog/ and workshop/
+
+.aside--promo,
+.aside.aside--promo {
+  .js & {
+    opacity: 0;
+  }
+  border-radius: $base-border-radius;
+  font-size: 0.8em;
+  background: $color-caption;
+  @include media($mid) {
+    margin-top: -4em;
+  }
+  padding: $gutter;
+  // border: 1px solid $chloi-purple;
+  .wordmark {
+    .wordmark-background {
+      fill: transparent;
+    }
+    .wordmark-foreground {
+      fill: $chloi-purple;
+    }
+  }
+  strong {
+    color: $chloi-purple;
+  }
+}
+
+a.aside,
+.aside {
+  cursor: pointer;
+  color: $color-text;
+  strong {
+    // font-weight: $font-weight-normal;
+    transition: color 0.09s, border-color $base-transition-duration, background $base-transition-duration;
+    color: $color-link-default;
+  }
+  &:hover,
+  &:focus {
+    .wordmark-foreground {
+      fill: $chloi-purple;
+    }
+    strong {
+      color: $color-link-hover;
+    }
+  }
+  &:active {
+      strong {
+        color: $color-link-active;
+      }
+  }
+}
+
+.aside-title {
+  margin-top: 1em;
+}
+
+@include media($wide) {
+
+  .aside--promo,
+  .aside.aside--promo {
+    margin-top: 7.8em;
+  }
+
+}

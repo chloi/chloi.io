@@ -1,0 +1,101 @@
+// Form
+// ----
+
+// Basic styles for forms
+
+form {
+  ul {
+    list-style-type: none;
+  }
+}
+
+fieldset {
+  background: $color-form-background;
+  border: 1px solid $color-form-border;
+  margin: 0 0 ($base-line-height / 2) 0;
+  padding: $base-line-height;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: $base-line-height / 4;
+
+  &.required:after {
+    content: "*";
+  }
+}
+
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+// Webkit & Gecko may change the display of these in the future
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"] {
+  box-sizing: border-box;
+  transition: border-color;
+  background-color: white;
+  border-radius: $form-border-radius;
+  border: 1px solid $color-form-border;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+  margin-bottom: $base-line-height / 2;
+  padding: $base-line-height * 0.5em;
+  resize: none;
+  width: 100%;
+  appearance: none;
+
+  &:hover {
+    border-color: darken($color-form-border, 10);
+  }
+
+  &:focus {
+    border-color: $color-highlight;
+    outline: none;
+  }
+}
+
+input {
+  appearance: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: $base-line-height / 4;
+}
+
+input[type="file"] {
+  width: 100%;
+}
+
+select {
+  width: auto;
+  margin-bottom: $base-line-height;
+}
+
+button,
+input[type="submit"] {
+  @extend %button;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}

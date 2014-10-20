@@ -1,0 +1,84 @@
+// Contact
+// -------
+
+// The contact form module
+
+.contact {
+  label {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.contact-name,
+.contact-email,
+.contact-message,
+.contact-form {
+  margin-bottom: $gutter;
+}
+
+.contact-secondary {
+  @include span-columns(4 of 4);
+  background: $color-caption;
+  padding: $gutter 1.508em $gutter $gutter;
+  ul,
+  ol,
+  li {
+    list-style-type: none;
+  }
+}
+
+@include media($mid) {
+
+  .contact {
+    @include row();
+    @include span-columns(8);
+  }
+
+  .contact-form {
+    @include span-columns(8);
+  }
+
+  .contact-name,
+  .contact-email {
+    @include span-columns(4 of 8);
+    @include omega(2n);
+  }
+  .contact-message {
+    @include span-columns(8);
+  }
+
+  .contact-button {
+    @include span-columns(8);
+  }
+
+  .contact-secondary {
+    @include span-columns(8)
+  }
+
+}
+
+@include media($wide) {
+
+  .main-container .contact {
+  // .contact {
+    @include span-columns(8 of 5);
+    margin-bottom: $gutter;
+  }
+
+  .contact-form {
+    @include row();
+    @include span-columns(5 of 8);
+    margin-bottom: 0;
+  }
+
+  .contact-name,
+  .contact-email {
+    @include span-columns(4 of 8);
+  }
+
+  .contact-secondary {
+    @include span-columns(3 of 8)
+  }
+
+}

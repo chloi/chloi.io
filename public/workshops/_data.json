@@ -1,0 +1,28 @@
+{
+  "node-brigade": {
+    "title": "Node Brigade",
+    "organizer": ["rob_ellis", "sintaxi"],
+    "meetup": "node-brigade-vancouver",
+    "meetup_endpoint": "http://api.meetup.com/2/groups?radius=25.0&order=id&group_urlname=node-brigade-vancouver&desc=false&offset=0&format=json&page=20&fields=&sig_id=45905542&sig=ab5574c01d5f3b37cad3570dd5eacc432dcf4266",
+    "twitter": "nodebrigade",
+    "desc": "Server, client, CLI, API, messaging, and more. All about Node.js."
+  },
+  "type-brigade": {
+    "title": "Type Brigade",
+    "organizer": ["kennethormandy"],
+    "meetup": "typebrigade",
+    "meetup_endpoint": "http://api.meetup.com/2/groups?radius=25.0&order=id&group_urlname=typebrigade&desc=false&offset=0&format=json&page=20&fields=&sig_id=45905542&sig=d09cb66c24ec752845173202f38b9a7b4913ac76",
+    "twitter": "typebrigade",
+    "url": "http://typebrigade.com",
+    "desc": "Vancouver’s type design and typography speaker series meetup."
+  },
+  "css-brigade": {
+    "title": "CSS Brigade",
+    "organizer": ["jorgepedret"],
+    "meetup": "css-brigade-vancouver",
+    "meetup_endpoint": "http://api.meetup.com/2/groups?radius=25.0&order=id&group_urlname=css-brigade-vancouver&desc=false&offset=0&format=json&page=20&fields=&sig_id=45905542&sig=22f1eedb896ec3ed554f227438c590f1b77a6382",
+    "twitter": "cssbrigade",
+    "url": "http://cssbrigade.com",
+    "desc": "There are no shortage of challenges when it comes to writing and maintaining CSS for modern web applications. Let's solve that problem at CSS Brigade."
+  }
+}

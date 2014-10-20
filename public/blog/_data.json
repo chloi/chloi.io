@@ -1,0 +1,100 @@
+{
+  "normalize-opentype-css": {
+    "title": "Introducing Normalize-OpenType.css",
+    "author": "kennethormandy",
+    "url": "http://kennethormandy.com/journal/normalize-opentype-css",
+    "date": "June 19, 2014",
+    "desc": "OpenType features—language requirements, typographic niceties, ligatures, alternate figures, small caps—are often forgotten about on the web even when included in a font. I’m that will happen a little less often with Normalize-OpenType.css."
+  },
+  "your-favourite-app-isnt-native": {
+    "title": "Your favourite app isn’t native",
+    "author": "kennethormandy",
+    "url": "http://kennethormandy.com/journal/your-favourite-app-isnt-native",
+    "date": "May 9, 2014",
+    "desc": "With this image, it’s clear that Instagram is a hybrid app. This is something we knew, but had difficulty proving. Something that, if you knew, might have made you think that Instagram was worse application than it was."
+  },
+  "web-type-west": {
+    "title": "Web Type West",
+    "author": "kennethormandy",
+    "url": "http://kennethormandy.com/journal/web-type-west",
+    "date": "Feb 1, 2014",
+    "desc": "Web Type West was a one-day conference on web typography, at Emily Carr University of Art + Design, in Vancouver, BC. What follows is my cleaned-up live notes from the event."
+  },
+  "static-draft-posts-with-harp": {
+    "title": "Static draft posts with Harp",
+    "author": "kennethormandy",
+    "url": "http://kennethormandy.com/journal/static-draft-posts-with-harp",
+    "date": "Jan 16, 2014",
+    "desc": "I have a lot of bad ideas. Once—well, more than once—I excitedly wore this gaudy, lime green t-shirt, sporting some kind of mesh racing stripe through the middle. Tucking it into the matching shorts was what really made the outfit. Or, what about when I stayed up so late the night before school, I fell asleep on someone on the bus the next day? (Fine, that one happened again yesterday.)"
+  },
+  "harp-all-the-things": {
+    "title": "Harp all the things: silentrob.me",
+    "author": "rob_ellis",
+    "url": "http://silentrob.me/articles/harp-app-the-things",
+    "date": "Jan 14, 2014",
+    "desc": "So I had this idea late last year, but this is going to be the year I see it though. My goal—simple, convert every site I made to a static Harp site."
+  },
+  "no-more-config": {
+    "title": "If you’re writing configuration to manage your assets you’re doing it wrong.",
+    "author": "rob_ellis",
+    "url": "http://silentrob.me/articles/no-more-config",
+    "date": "Jan 6, 2014",
+    "desc": "I grew up writing HTML, CSS and JavaScript like everyone else, but each time I opened a blank text document and starred at the page the awkward feeling crept in. My pinky finger still cringes from holding shift followed by <. Sure I could copy and paste in a template or use the HTML5 boilerplate, but that only saves keystrokes and does not make anything easier."
+  },
+  "projct-hub": {
+    "title": "Project Hub: A new Harp template to track project timelines",
+    "author": "jorgepedret",
+    "url": "http://jorgepedret.com/posts/harp-project-hub",
+    "date": "Jan 3, 2014",
+    "desc": "A new Harp template that serves as a centralized home base for your projects and makes it really easily keep track of events and notes from the whole team."
+  },
+  "lazily-live-blogging-rubyconf-argentina-2013": {
+    "title": "Live blogging RubyConf Argentina 2013",
+    "author": "sintaxi",
+    "url": "http://sintaxi.com/rubyconf-argentina-2013",
+    "date": "Nov 27, 2013",
+    "desc": "I'm collecting my photographs of <a href=\"http://rubyconfargentina.org/en/\">RubyConf Argentina 2013</a>. This will be incomplete, things will be missed, but it's something. More pictures can be found on <a href=\"http://www.flickr.com/photos/rubyconfar\">Flickr</a>."
+  },
+  "harp-platform-public-milestone-complete": {
+    "title": "Harp Platform public milestone complete",
+    "author": "jorgepedret",
+    "url": "http://jorgepedret.com/posts/harp-goes-public",
+    "date": "Nov 15, 2013",
+    "desc": "It’s been a whole year since I started working on the Harp Platform and we’re really excited to announce today that we’ve opened the gates to the public."
+  },
+    "harp-platform-is-now-public": {
+    "title": "Harp Platform is now Public!",
+    "author": "sintaxi",
+    "url": "http://blog.harp.io/posts/harp-platform-now-public",
+    "date": "Nov 15, 2013",
+    "desc": "After a successful private beta I am happy to announce the Harp Platform is now available to the public."
+  },
+  "the-awkward-css-learning-curve": {
+    "title": "The Awkward CSS Learning Curve",
+    "author": "jorgepedret",
+    "url": "http://jorgepedret.com/posts/css-learning-curve",
+    "date": "Nov 1, 2013",
+    "desc": "When I started working with CSS, it wasn’t more than adding a couple of in-line styles to my beautiful HMTL table layout"
+  },
+  "dynamic-sitemap-for-your-harp-apps": {
+    "title": "Dynamic sitemap for your Harp Apps",
+    "author": "jorgepedret",
+    "url": "http://jorgepedret.com/posts/harp-app-sitemap",
+    "date": "Oct 10, 2013",
+    "desc": "Kevin Saliou asked last week about how to generate a dynamic sitemap of your Harp App. Here’s what we came up with."
+  },
+  "start-a-blog-with-harp": {
+    "title": "Start a blog with Harp",
+    "author": "kennethormandy",
+    "url": "http://kennethormandy.com/journal/start-a-blog-with-harp",
+    "date": "Oct 15, 2013",
+    "desc": "I’ve always enjoyed pretending to be a developer. Faking my way through new web technologies has become a familiar exercise. But this time was different: the deception didn’t come from me, but my own development environment."
+  },
+  "introducing-harp": {
+    "title": "Introducing Harp",
+    "author": "sintaxi",
+    "url": "http://sintaxi.com/introducing-harp",
+    "date": "Oct 9, 2013",
+    "desc": "After ten months, sixty releases, and countless re-evaluations of the API, I am extremely proud to introduce <a href=\"http://harpjs.com\">Harp</a>, a new kind of static web server that has built-in preprocessing. I encourage you to <a href=\"https://github.com/sintaxi/harp\">give it a try</a>."
+  }
+}

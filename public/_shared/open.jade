@@ -1,0 +1,26 @@
+ul.media-grid.wide-container
+  each project, slug in public.open._data
+    if project.published !== false && (limit > 0 || typeof(limit)=='undefined')
+      if limit
+        - limit--
+      li.media-grid-item(data-repo=project.repository)
+        a.media(href="#{ project.url ? project.url : 'https://github.com/' + project.repository }", class="open-#{ slug }")
+          //- (href="/open\##{ slug }")
+          .media-image
+            if project.logo
+              img(src="/images/open/#{ project.logo }" alt=project.title)
+            else
+              h3.media-image-title= project.title
+          if project.description
+            .media-caption
+              h4.media-caption-header!= project.repository
+              //- unless project.url && !project.repository
+              //-   p.social-star &#9733; #{ project.stars || 'Star' }
+              p!= project.description
+              ul.media-stats(id="js-#{ project.repository.replace(/\//g, '-') }-stats")
+
+if limit == 0 && more !== false
+  .media-more
+    a(href="/open")
+      strong See more of our open source projects
+      p We can help grow your project, just like these

@@ -1,0 +1,14 @@
+.container
+  .main-container
+    //- img.figure-large(src="/images/team/team.jpg", alt="Team photo of Chloi Inc.")
+
+    h1 Team
+    ul
+      each member in public.team._data
+        li
+          //- img(src="http://avatars.io/email/#{ member.email }?size=large", alt="A photo of #{ author.name }")
+          h3
+            a(href="#{ member.url }")= member.name
+          ul
+            li: a(href="http://twitter.com/#{ member.twitter }") Twitter
+            li: a(href="http://github.com/#{ member.github }") GitHub

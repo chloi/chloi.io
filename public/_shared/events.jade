@@ -1,0 +1,23 @@
+ul.media-grid
+  each evt, slug in public.workshops._data
+    li.media-grid-item(data-meetup=evt.meetup data-endpoint=evt.meetup_endpoint)
+      a.media(href="#{ evt.url ? evt.url : 'http://meetup.com/' + evt.meetup }", class="event-#{ slug }")
+        .media-image
+          if evt.logo
+            img(src="/images/open/#{ evt.logo }" alt=evt.title)
+          else
+            h3.media-image-title= evt.title
+
+        .media-caption
+          //- ul.horizontal-list
+          //-   each i in evt.organizer
+          //-     member = public.team._data[i]
+          //-     li= member.name
+          p #{ evt.desc }
+          ul.media-stats(id="js-#{ evt.meetup }-stats")
+
+if limit == 0 && more !== false
+  .media-more
+    a(href="/open")
+      strong Join one of our meetups
+      p We learn from the best in our community

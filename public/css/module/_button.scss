@@ -1,0 +1,52 @@
+// Button
+// ------
+
+// The button module
+
+@include media($mid) {
+  .buttons {
+    @include span-columns(4)
+  }
+}
+
+button,
+input[type=submit],
+.button,
+a.button {
+  // @include button(simple, $color-primary);
+  transition: color 0.09s, border-color $base-transition-duration, background $base-transition-duration;
+  @include rem(font-size, 1.25);
+  display: block;
+  text-align: center;
+  padding: 1em 1.5em;
+  background-color: $color-primary;
+  color: $color-background;
+  border-radius: $base-border-radius;
+  font-weight: $font-weight-bold;
+  border: 1px solid transparent;
+  box-shadow: none;
+  text-shadow: none;
+  width: 100%;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    background: $color-highlight;
+  }
+  &:active {
+    background: darken($color-highlight, 10%);
+  }
+  @include media($wide) {
+    max-width: 15em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  &.button--primary {
+    background: $color-highlight;
+    &:hover,
+    &:focus,
+    &:active {
+      background: darken($color-highlight, 15%);
+    }
+  }
+}

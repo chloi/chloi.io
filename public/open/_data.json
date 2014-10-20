@@ -1,0 +1,107 @@
+{
+  "harp": {
+    "title": "Harp",
+    "description": "The static web server with built-in preprocessing. Write LESS, Markdown, CoffeeScript and more as easily as HTML, CSS, and JavaScript.",
+    "repository": "sintaxi/harp",
+    "url": "http://harpjs.com",
+    "logo": "harp.svg"
+  },
+  "cordova": {
+    "title": "Apache Cordova",
+    "repository": "apache/cordova-ios",
+    "url": "http://cordova.apache.org",
+    "description": "PhoneGap, renamed to Cordova, is now thriving as part of the Apache foundation where it will remain free and open source.",
+    "logo": "cordova.png"
+  },
+  "phonegap": {
+    "title": "PhoneGap",
+    "repository": "phonegap/phonegap",
+    "description": "PhoneGap was invented and first authored by Chloi founders Brock Whitten and Rob Ellis, along with Eric Oesterle at iPhoneDevCamp 2."
+  },
+  "natural": {
+    "title": "Natural",
+    "repository": "NaturalNode/Natural",
+    "description": "A general natural language facility for Node. Includes tokenizing, classification, phonetics, similarity, and more."
+  },
+  "xui": {
+    "title": "xui",
+    "description": "A tiny JavaScript framework for mobile web apps. Championed by Rob Ellis in 2009, it laid the foundation for libraries like Zepto.",
+    "repository": "xui/xui"
+  },
+  "dbox": {
+    "title": "dbox",
+    "description": "The Node SDK for the Dropbox API",
+    "repository": "sintaxi/node-dbox"
+  },
+  "apricot": {
+    "title": "apricot",
+    "description": "A simple Hpricot Clone for Node.",
+    "repository": "silentrob/apricot"
+  },
+  "normalize-opentype-css": {
+    "title": "Normalize-OpenType.css",
+    "description": "Adds OpenType features—ligatures, kerning, and more—to Normalize.css.",
+    "repository": "kennethormandy/normalize-opentype.css"
+  },
+  "intercom": {
+    "title": "intercom",
+    "description": "The Node SDK for the Intercom.io API.",
+    "repository": "silentrob/node-intercom"
+  },
+  "terraform": {
+    "title": "terraform",
+    "description": "Harp’s asset pipeline.",
+    "repository": "sintaxi/terraform"
+  },
+  "harp-editor": {
+    "title": "harp-editor",
+    "description": "A simple Harp editor.",
+    "repository": "silentrob/harp-editor"
+  },
+  "earley": {
+    "title": "earley-node",
+    "description": "A Context Free Gramar written in Node.",
+    "repository": "silentrob/early-node"
+  },
+  "harp-toolbar": {
+    "title": "harp-toolbar",
+    "description": "An OS X menubar app for Harp.",
+    "repository": "silentrob/harp-toolbar"
+  },
+  "rolodex": {
+    "title": "rolodex",
+    "description": "A Node user management system using Redis.",
+    "repository": "sintaxi/rolodex"
+  },
+  "thug": {
+    "title": "thug",
+    "description": "ORM replacement that provides a functional style object filtration and validation system.",
+    "repository": "sintaxi/thug"
+  },
+  "waterfront": {
+    "title": "waterfront",
+    "description": "A generic message broker system on top of ZeroMQ with discovery patterns for push/pull, req/rep, pub/sub.",
+    "repository": "sintaxi/waterfront"
+  },
+  "yoke": {
+    "title": "yoke",
+    "description": "A preprocessor for language agnostic file concatenation.",
+    "repository": "sintaxi/yoke",
+    "url": "http://yoke.harp.io"
+  },
+  "chasers": {
+    "title": "chasers",
+    "description": "Neat helpers, making complex, mobile-first layouts a little easier.",
+    "repository": "kennethormandy/chasers"
+  },
+  "straight-up": {
+    "title": "straight-up",
+    "description": "A lightweight, fluid grid framework: Neat without Bourbon.",
+    "repository": "kennethormandy/straight-up"
+  },
+  "big-ideas-text": {
+    "title": "big-ideas-text",
+    "description": "Dynamically scale lines of text within a container—but “Don’t get any / big ideas.”",
+    "repository": "kennethormandy/big-ideas-text"
+  }
+}

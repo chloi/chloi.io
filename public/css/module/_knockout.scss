@@ -1,0 +1,159 @@
+// Knockout
+// --------
+
+// Overrides for light text on dark backgrounds
+// Used for certain sections on the landing page,
+// and for the entire open/ section
+
+.open {
+  background: darken($color-primary, 14);
+  background-image: url("/images/chloi-fringe-bottom.png");
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 35px;
+
+  color: $color-background;
+
+  a,
+  a:visited {
+    color: $chloi-beige;
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($color-highlight, 15%);
+    }
+  }
+
+  .nav-item {
+    border-bottom: 1px solid $color-primary;
+    &:last-child {
+      border-bottom: none;
+    }
+    &.nav-item--skip {
+      border: none;
+    }
+    @include media($mid) {
+      border: none;
+    }
+  }
+
+  .nav-toggle {
+    &:before,
+    &:after {
+      border-color: $chloi-beige;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      &:before,
+      &:after {
+        border-color: $color-link-hover;
+      }
+    }
+  }
+
+  .media {
+    &:hover,
+    &:active,
+    &:focus {
+      .media-caption {
+        transition: color 0.09s, border-color $base-transition-duration, background $base-transition-duration;
+        color: darken($color-highlight, 15%);
+      }
+    }
+  }
+
+  .media-grid-item {
+    background: $chloi-white;
+    &:nth-child(1n) a {
+      color: $chloi-lime;
+    }
+    &:nth-child(2n) a {
+      color: $chloi-orange;
+    }
+    &:nth-child(3n) a {
+      color: $chloi-grey;
+    }
+    &:nth-child(4n) a {
+      color: darken($color-highlight, 15%);
+    }
+    &:nth-child(5n) a {
+      color: $chloi-teal;
+    }
+    &:nth-child(6n) a {
+      color: $chloi-purple;
+    }
+    &:nth-child(7n) a {
+      color: $chloi-red;
+    }
+    // .media.open-harp {
+    //   background: $chloi-blue;
+    // }
+    // .media.open-cordova {
+    //   background: #CCC;
+    // }
+    .media.open-phonegap {
+      color: $color-text;
+    }
+  }
+
+  .media-image {
+    height: 9em;
+    line-height: 1.1;
+    text-align: center;
+    width: 100%;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  .media {
+    border-bottom: none;
+  }
+
+  .media-caption,
+  a .media-caption,
+  .contact-secondary {
+    background: darken($color-primary, 17);
+    color: $color-background;
+    p, ul, li, a {
+      color: lighten($color-primary, 26);
+      &:before {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .media-more {
+    p {
+      color: lighten($color-primary, 24);
+    }
+  }
+
+  textarea,
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"],
+  // Webkit & Gecko may change the display of these in the future
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"] {
+    border: 1px solid darken($color-primary, 17);
+    &:hover {
+      border-color: darken(darken($color-primary, 17), 10);
+    }
+    &:focus {
+      border-color: $color-highlight;
+    }
+  }
+
+}

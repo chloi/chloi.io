@@ -1,0 +1,43 @@
+/*= @group Reset
+---------------------------------------------------------------------- */
+/*
+  Based on normalize.css
+  http://html5boilerplate.com/docs/The-style/
+  http://necolas.github.com/normalize.css/
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html {
+  font-size: 100%;
+  text-size-adjust: 100%;
+  // @include transform(translateY(0));
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+}
+
+body { margin: 0; }
+
+::selection {
+    background-color: $color-selection;
+}
+
+@viewport {
+  width: device-width;
+}
+
+// Typekit events
+.wf-loading { visibility: hidden; }
+.wf-active { visibility: visible; }
+.wf-inactive {
+  visibility: visible !important;
+  // @extend .wf-active;
+}

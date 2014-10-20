@@ -1,0 +1,25 @@
+.container
+  .main-container
+    .lead
+      h1 forward-thinking Node.js and mobile&nbsp;engineering
+      p Founded by the co-creators of <strong><a href="http://phonegap.com">PhoneGap</a></strong> and former <strong>No.de</strong> engineers, we help build next-generation web and mobile&nbsp;experiences.
+      //- Yeah, I know…
+      p <br/>
+        a.button.button--primary(href="#contact") Let’s talk
+.open
+  .container
+    .main-container
+      h2.h1 Launch sooner, remain&nbsp;reliable
+      p We give our clients the advantage of open source technologies. By building on existing, trusted, open projects, they launch faster, and with less risk. <a href="contact" title="Work with Chloi Inc.">Contact us to find out more</a> or take a look at our own open source projects.
+      != partial("_shared/open", { limit: 3, more: false })
+      h2.h1 Work with us
+      != partial("_shared/wufoo")
+
+.container
+  .main-container
+    h1 Our projects
+    p We help build tools for developers and designers working on the web.
+    != partial("_shared/projects", { limit: 3, more: false })
+
+    h2.h1 We’ve been writing
+    != partial("_shared/blog", { limit: 3 })

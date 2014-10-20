@@ -1,0 +1,98 @@
+// Opening
+// -------
+
+// Opening images for projects, could also
+// be used for blog posts
+
+.opening {
+  // background: $chloi-grey;
+}
+
+.opening-image {
+  @include fill-parent;
+  background: $color-background;
+}
+
+.opening-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.opening-title {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+@include media($mid) {
+
+  .opening + .main-container > p:first-of-type, .lead {
+    // margin-bottom: 0;
+    font-size: $base-font-size * 1.1;
+    line-height: 1.33;
+    @include media($narrow) {
+      font-size: $base-font-size * 1.25;
+    }
+  }
+
+  .opening-header {
+    z-index: 1;
+    position: relative;
+    bottom: 2em;
+  }
+
+  .opening-image {
+    margin-bottom: 0;
+  }
+
+  .opening-container {
+    position: absolute;
+    bottom: 0;
+    color: $color-background;
+    text-shadow: 0 1px 1em rgba(darken($color-text, 25%), 0.9);
+    @include span-columns(6);
+  }
+
+  .opening-title {
+    font-size: 4em;
+    text-shadow: 0 1px 0.75em rgba(darken($color-text, 50%), 0.75);
+  }
+
+  .opening-title-hidden {
+    // @extend .hidden;
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+@include media($wide) {
+
+  .opening {
+     min-height: ($wide-width / 3);
+     // background: darken($color-text, 25%);
+     overflow: hidden;
+     position: relative;
+   }
+
+   .opening-image {
+      display: block;
+   }
+
+  .opening-overlay {
+    max-height: ($wide-width / 2.5);
+    .opening-image {
+      max-width: 100%;
+      width: 100%;
+      float: left;
+      position: relative;
+      bottom: (1.5($wide-width / 10));
+    }
+  }
+
+  .opening-header {
+    @include outer-container;
+    position: relative;
+    max-height: ($wide-width / 2.5);
+  }
+
+}

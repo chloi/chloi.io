@@ -1,0 +1,30 @@
+//- script(src='/js/wufoo.js')
+.contact#contact
+  form#form1.wufoo.topLabel.page.contact-form(name='form1', enctype='multipart/form-data', method='post', action='https://chloi.wufoo.com/forms/zvwzlxj1gfbqlw/#public')
+    ul
+      li#foli1.notranslate.contact-name
+        label#title1.desc(for='Field1') Name
+        input#Field1.field.text.medium(placeholder="Your name", required="required", name='Field1', type='text', value='', maxlength='255', onkeyup='')
+      li#foli2.notranslate.contact-email
+        label#title2.desc(for='Field2') Email
+        input#Field2.field.text.medium(placeholder="Email address", required="required", name='Field2', type='email', spellcheck='false', value='', maxlength='255')
+      li#foli3.notranslate.contact-message
+        label#title3.desc(for='Field3') Message
+        textarea#Field3.field.textarea.small(placeholder="If you’d like, tell us a little about your project.", name='Field3', spellcheck='true', rows='10', cols='50', onkeyup='')
+      li.buttons
+          input#saveForm.button.button--primary.btTxt.submit(name='saveForm', type='submit', value='Send')
+      li.hidden
+        label(for='comment') Do Not Fill This Out
+        textarea#comment(name='comment', rows='1', cols='1')
+        input#idstamp(type='hidden', name='idstamp', value='3S/SF5tKwHrclupqHPUh0LeIwj/m4z4yWF5fwpqH92A=')
+
+  aside.contact-secondary
+    ul
+      each number, country in author.phone
+        li.contact-phone
+          strong Phone
+          abbr  #{ country }
+          a(href="tel:#{ number.replace(/ /g, '') }" class="#{ country }")  #{ number }
+      li
+        strong Twitter
+        a(href="http://twitter.com/#{ author.twitter }")  @#{ author.twitter }

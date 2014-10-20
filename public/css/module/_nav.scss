@@ -1,0 +1,146 @@
+// Nav
+// ---
+
+// The nav module
+
+.nav {
+  position: relative;
+}
+
+.header .nav {
+  display: none;
+  visibility: hidden;
+}
+
+.nav-list {
+  display: block;
+  list-style: none;
+  font-family: $font-family-sans;
+  text-transform: lowercase;
+  line-height: 3;
+  text-align: center;
+}
+
+.nav-item {
+  display: block;
+  border-bottom: 1px solid $color-caption;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.nav-link {
+  @include rem(font-size, 1.921); // changed from ms(2) // If this is changed, 2 must be changed below
+  line-height: 3 * 0.9; // lessen line-height by one thrid
+  padding-bottom: 0.15em; // and add it to bottom to vertically centre
+  display: block;
+  &:hover,
+  &:active {
+    color: $color-highlight;
+  }
+  &:visited {
+    @extend .nav-link;
+  }
+  &:focus {
+    outline: 0;
+    // should open menu on focus
+  }
+
+}
+
+.nav-toggle {
+  float: right;
+  padding: 1.5em ($gutter / 2);
+  line-height: 1.1;
+  @include rem(font-size, 1.5);
+  &:before {
+    content: "";
+    display: block;
+    float: left;
+    width: 1.5em;
+    height: 1.5em;
+    border-top: (1.5em * (3 / 5)) double $color-primary;
+    border-bottom: (1.75em * (1 / 5)) solid $color-primary;
+    margin: 0 $gutter / 2 0 0;
+    padding: 0;
+    background: transparent;
+    @include rem(font-size, 1);
+    box-sizing: border-box;
+    transition: color $base-transition-duration, border-color $base-transition-duration, background $base-transition-duration;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    &:before {
+      border-color: $color-highlight;
+    }
+  }
+}
+
+.nav-item--skip {
+  border: 0;
+}
+
+.nav-skip {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  &:focus {
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@include media($mid) {
+
+  .header .nav {
+    display: block;
+    visibility: visible;
+  }
+
+  .nav--footer {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav {
+    margin-top: 0; // override js
+  }
+
+  .nav-list {
+    float: right;
+  }
+
+  .nav-item {
+    display: inline-block;
+    border-bottom: none;
+  }
+
+  .nav-skip {
+    padding: 0;
+  }
+
+  .nav-link,
+  .nav-skip:focus {
+    @include rem(font-size, 1);
+    line-height: 5.5rem;
+    padding: 0 0.5em 0 0.5em;
+    font-size: 0.8em;
+  }
+
+  .nav-toggle {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+@include media($wide) {
+
+  .nav-link,
+  .nav-skip:focus {
+    font-size: 1em;
+  }
+
+}

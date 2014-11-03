@@ -17,5 +17,6 @@ ul.post-list#speaking
             a(href="http://twitter.com/#{ author.twitter }") #{ author.name }
             |  at #{ talk.loc } on&nbsp;
             time.post-time(datetime="#{ talk.date }") #{ talk.date }
-          if talk.desc
-            p.post-desc--light !{ talk.desc }
+          //-
+            if talk.desc
+              p.post-desc--light !{ talk.desc }

@@ -6,7 +6,7 @@ html(lang="en")
   // <![endif]
   head
     meta(charset="utf-8")
-    title !{ typeof(public._data[current.path[0]])!=='undefined' && typeof(public._data[current.path[0]].title)!=='undefined' ? public._data[current.path[0]].title + ' &ndash; ' : '' }#{ name }
+    title !{ typeof(public._data[current.path[0]])!=='undefined' && typeof(public._data[current.path[0]].title)!=='undefined' ? public._data[current.path[0]].title + ' &ndash; ' + name : name  + ' &ndash; ' + tagline }
     meta(charset="utf-8")
     meta(name="description", content="#{ typeof(public._data[current.path[0]])!=='undefined' && typeof(public._data[current.path[0]].description)!=='undefined' ? public._data[current.path[0]].description : description }")
     meta(name="keywords", content="#{ typeof(public._data[current.path[0]])!=='undefined' && typeof(public._data[current.path[0]].keywords)!=='undefined' ? public._data[current.path[0]].keywords : keywords }")
@@ -54,3 +54,4 @@ html(lang="en")
         s.parentNode.insertBefore(g, s);
         })(document, 'script');
         //]]>
+        

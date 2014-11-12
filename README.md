@@ -2,7 +2,7 @@
 
 Our website.
 
-It’s built with ours’ and other’s open source projects, including:
+It’s built with ours and others’ open source projects, including:
 
 - [Harp](http://github.com/sintaxi/harp)
 - [Straight Up](https://github.com/kennethormandy/straight-up)
@@ -41,4 +41,4 @@ Now, just press Publish on the chloi.io project on the [Harp Platform](http://ha
 
 ## License
 
-Copyright © 2012–2014 [Chloi Inc.](http://chloi.io).
+Copyright © 2012–2014 [Chloi Inc.](http://chloi.io)

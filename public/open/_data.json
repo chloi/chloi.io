@@ -31,7 +31,7 @@
   "dbox": {
     "title": "dbox",
     "description": "The Node SDK for the Dropbox API",
-    "repository": "sintaxi/node-dbox"
+    "repository": "sintaxi/dbox"
   },
   "apricot": {
     "title": "apricot",

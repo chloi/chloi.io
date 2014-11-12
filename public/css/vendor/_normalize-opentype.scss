@@ -1,4 +1,16 @@
-/*! normalize-opentype v0.2.0 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+// THIS HAS BEEN EDITED
+// Using the ko-salt branch of Normalize-OpenType.css instead of master
+
+/*! normalize-opentype v0.2.1 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+
+/* Configuration
+========================================================================== */
+
+/**
+ * 1. Turn on stylistic alternates across the entire site (off by default)
+ */
+
+$opentype-salt: 0 !default;
 
 /**
  * 1. Inherit style issues with custom selections, per robsterlini.co.uk/journal/opentype-and-selection-dont-mix
@@ -8,12 +20,12 @@
 
 ::selection {
   color: inherit; /* 1. */
-  text-shadow: inherit; /* 1. */
+  text-shadow: inherit; /* 2. */
 }
 
 html,
 body {
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0; /* 2. */
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "salt" $opentype-salt; /* 2. */
 }
 
 /* Headings
@@ -26,7 +38,7 @@ body {
 h1,
 h2,
 h3 {
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1; /* 1. */
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1, "salt" $opentype-salt; /* 1. */
 }
 
 /* Text-level semantics
@@ -39,7 +51,7 @@ h3 {
 
 abbr {
   text-transform: uppercase; /* 1 */
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1; /* 2 */
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1, "salt" $opentype-salt; /* 2 */
 }
 
 /*
@@ -47,7 +59,7 @@ abbr {
  */
 
 time {
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "salt" $opentype-salt;
 }
 
 /*
@@ -59,7 +71,7 @@ pre,
 kbd,
 samp,
 code {
-  font-feature-settings: "kern" 0, "liga" 0, "calt" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1; /* 1. */
+  font-feature-settings: "kern" 0, "liga" 0, "calt" 1, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1, "salt" $opentype-salt; /* 1. */
 }
 
 mark {
@@ -76,7 +88,7 @@ cite {
  */
 
 sup {
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1; /* 1. */
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1, "salt" $opentype-salt; /* 1. */
 }
 
 /**
@@ -84,7 +96,7 @@ sup {
  */
 
 sub {
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1; /* 1. */
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1, "salt" $opentype-salt; /* 1. */
 }
 
 
@@ -149,7 +161,7 @@ input[type="number"],
 input[type="range"],
 input[type="tel"],
 input[type="week"] {
-  font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0; /* 1. */
+  font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0, "salt" $opentype-salt; /* 1. */
 }
 
 /* Localisation
@@ -214,19 +226,15 @@ input[type="week"] {
 ========================================================================== */
 
 /**
- * 1. Turns on tabular, lining numerals and slashed zero
- *    Turns off kerning, as it could impact tabular numerals
+ * 1. Resets tables to the same settings as the body.
+ * 2. Turns on tabular, lining numerals and slashed zero
  */
 
 table {
-  font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1; /* 1. */
+  @extend body; /* 1.*/
 }
 
-/**
- * 1. Revert to defaults for table headings
- */
-
-table thead,
-table tfoot {
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0; /* 2. */
+tbody,
+caption {
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1, "salt" $opentype-salt; /* 2. */
 }

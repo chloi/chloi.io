@@ -37,7 +37,6 @@ body {
     font-family: $font-family-sans;
     em, cite {
       color: inherit;
-      font-family: $font-family-serif;
     }
     code {
       color: inherit;
@@ -48,6 +47,9 @@ body {
   blockquote, figcaption {
     font-family: $font-family-serif;
     font-style: italic;
+    em, cite {
+      font-style: normal;
+    }
   }
 
   // /* Caption font stack, should be suitable for smaller sizes */

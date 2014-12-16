@@ -23,10 +23,20 @@
     "repository": "NaturalNode/Natural",
     "description": "A general natural language facility for Node. Includes tokenizing, classification, phonetics, similarity, and more."
   },
+  "superscript": {
+    "title": "SuperScript",
+    "repository": "silentrob/superscript",
+    "description": "SuperScript is a dialog system and bot engine for creating human-like conversation chat bots. Hello."
+  },
   "xui": {
     "title": "xui",
     "description": "A tiny JavaScript framework for mobile web apps. Championed by Rob Ellis in 2009, it laid the foundation for libraries like Zepto.",
     "repository": "xui/xui"
+  },
+  "normalize-opentype-css": {
+    "title": "Normalize-OpenType.css",
+    "description": "Adds OpenType features—ligatures, kerning, and more—to Normalize.css.",
+    "repository": "kennethormandy/normalize-opentype.css"
   },
   "dbox": {
     "title": "dbox",
@@ -37,11 +47,6 @@
     "title": "apricot",
     "description": "A simple Hpricot Clone for Node.",
     "repository": "silentrob/apricot"
-  },
-  "normalize-opentype-css": {
-    "title": "Normalize-OpenType.css",
-    "description": "Adds OpenType features—ligatures, kerning, and more—to Normalize.css.",
-    "repository": "kennethormandy/normalize-opentype.css"
   },
   "intercom": {
     "title": "intercom",
@@ -58,16 +63,6 @@
     "description": "A simple Harp editor.",
     "repository": "silentrob/harp-editor"
   },
-  "earley": {
-    "title": "earley-node",
-    "description": "A Context Free Gramar written in Node.",
-    "repository": "silentrob/early-node"
-  },
-  "harp-toolbar": {
-    "title": "harp-toolbar",
-    "description": "An OS X menubar app for Harp.",
-    "repository": "silentrob/harp-toolbar"
-  },
   "rolodex": {
     "title": "rolodex",
     "description": "A Node user management system using Redis.",
@@ -78,21 +73,31 @@
     "description": "ORM replacement that provides a functional style object filtration and validation system.",
     "repository": "sintaxi/thug"
   },
+  "earley": {
+    "title": "earley-node",
+    "description": "A Context Free Gramar written in Node.",
+    "repository": "silentrob/early-node"
+  },
+  "harp-toolbar": {
+    "title": "harp-toolbar",
+    "description": "An OS X menubar app for Harp.",
+    "repository": "silentrob/harp-toolbar"
+  },
   "waterfront": {
     "title": "waterfront",
     "description": "A generic message broker system on top of ZeroMQ with discovery patterns for push/pull, req/rep, pub/sub.",
     "repository": "sintaxi/waterfront"
+  },
+  "figment": {
+    "title": "figment",
+    "description": "Editorial figure and caption pairings for mobile-first layouts.",
+    "repository": "kennethormandy/figment"
   },
   "yoke": {
     "title": "yoke",
     "description": "A preprocessor for language agnostic file concatenation.",
     "repository": "sintaxi/yoke",
     "url": "http://yoke.harp.io"
-  },
-  "chasers": {
-    "title": "chasers",
-    "description": "Neat helpers, making complex, mobile-first layouts a little easier.",
-    "repository": "kennethormandy/chasers"
   },
   "straight-up": {
     "title": "straight-up",

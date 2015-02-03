@@ -1,0 +1,37 @@
+{
+  "brewhouse.io": {
+    "name": "Brewhouse",
+    "alumni": true,
+    "twitter": "brewhouseteam",
+    "url": "http://brewhouse.io",
+    "description": "A group of creative web product developers for hire. We love brewing tech, tea and coffee."
+  },
+  "saucelabs.com": {
+    "name": "Sauce Labs",
+    "twitter": "saucelabs",
+    "url": "http://saucelabs.com",
+    "alumni": true,
+    "description": "Sauce Labs’ Vancouver team, working on mobile testing across 400+ device/OS/browser platforms."
+  },
+  "socailchorus.com": {
+    "name": "Social Chorus",
+    "twitter": "socialchorus",
+    "url": "http://socialchorus.com",
+    "alumni": false,
+    "description": "Social Chorus’ Vancouver team, enabling employees and brand ambassadors to generating new awareness."
+  },
+  "pathful.com": {
+    "name": "Pathful",
+    "twitter": "pathful",
+    "url": "http://pathful.com",
+    "alumni": false,
+    "description": "Pathful provides content marketing intelligence and analytics. See the impact your content is having."
+  },
+  "medinovel.com": {
+    "name": "Medinovel",
+    "twitter": "Medinovel",
+    "url": "http://medinovel.com",
+    "alumni": false,
+    "description": "Medinovel is a medical innovation company focused on developing products for the operating-room environment."
+  }
+}

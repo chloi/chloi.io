@@ -1,0 +1,86 @@
+.container
+  .opening
+    img.opening-image(src="../images/hq/hq-header.jpg" alt="")
+    header.opening-header
+      .opening-container.main-container
+        h1.opening-title Share our space.
+        p.opening-desc There’s open desks alongside talented teams and individuals at the Chloi&nbsp;<abbr class="caps">HQ</abbr> co-working space in&nbsp;Vancouver.
+        a.button(href="mailto:info@chloi.io?subject=Office%20space&body=Hey,%20I’m%20interested in checking out the Chloi HQ space.") Book a visit
+        address.opening-address
+          | The view from 
+          strong Chloi <abbr>HQ</abbr><br/>
+          | 604-55 East Cordova<br/>
+          | Vancouver, BC<br/>
+          | V6A 0A5 Canada
+    
+
+  .main-container
+    :markdown
+
+      From the very beginning we have been focused on working with the community, weather it be on collaberating in Open Source, or education though [meetups and speaking](../workshops) engagments.
+
+      When we set out to find an office, we had the community in mind as well. We wanted a space that was on par with some of the greatest spaces in the city. An office that was fun and engergtic as well as had spaces to break out and collaborate.
+
+    div(data-pullquote="We wanted a space that was on par with some of the greatest spaces in the city")
+      
+    :markdown
+
+      We wanted a space where like-minded teams and individials could work around us and help __share in each other’s success__, along with some of the overhead costs.
+
+      While we call the space Chloi <abbr>HQ</abbr>, it is really a shared co-operative space where we cover the administration, keep the power and internet on, and manage who comes and goes.
+
+      We’ve been lucky to call the incredible individuals and new, remote Vancouver teams our co-workes in friends.
+      
+    a.button(href="mailto:info@chloi.io?subject=Office%20space&body=Hey,%20I’m%20interested in checking out the Chloi HQ space.") Book a visit
+
+    h2#residents Current Teams
+    
+    p You’ll quickly get to know the talented and friendly developers, designers, writers, and markets at Chloi <abbr>HQ</abbr> everyday.
+    
+    ul.media-grid
+      each team, slug in public.office._data
+        if team.alumni === false
+          li.media-grid-item
+            .media
+              .media-image
+                //- if project.logo
+                //-   img(src="/images/open/#{ project.logo }" alt=project.title)
+                //- else
+                h3.media-image-title= team.name
+              if team.description
+                .media-caption
+                  p!= team.description
+
+    h2#alumni Awesome Alumni
+    
+    p We’ve had the pleasure of sharing the space with many successful teams that have outgrown a co-working space, like:
+    
+    ul.media-grid
+      each team, slug in public.office._data
+        if team.alumni === true
+          li.media-grid-item
+            .media
+              .media-image
+                //- if project.logo
+                //-   img(src="/images/open/#{ project.logo }" alt=project.title)
+                //- else
+                h3.media-image-title= team.name
+              if team.description
+                .media-caption
+                  p!= team.description
+    h2 Visit us in Gastown
+          
+    figure.figure-overlay.figure-overlay--dark
+      iframe.map.map--small(async defer width="100%" frameBorder="0" src="https://a.tiles.mapbox.com/v3/kennethormandy.gmeo6793/attribution.html")
+      figcaption.map-caption
+        | Chloi <abbr>HQ</abbr> is located at<br/>
+        address <a href="https://www.google.ca/maps/place/55+E+Cordova+St/@49.2824697,-123.1034229,17z">604-55 East Cordova St.</a>,<br/>
+        | moments away from some of the best lunch and coffee spots in Vancouver. 
+
+
+  aside#js-cta.js-cta
+    a(href="mailto:info@chloi.io?subject=Office%20space&body=Hey,%20I’m%20interested%20in%20checking%20out%20the%20Chloi%20HQ%20space.").aside.aside--promo
+      .wordmark(href="/")!=partial("../images/wordmark.svg.ejs")
+      h4 Come visit us
+      p We have one of the best views and best gathering of teams in Vancouver.
+      strong Get in touch to see if Chloi <abbr>HQ</abbr> a good fit for your team.

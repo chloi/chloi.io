@@ -30,14 +30,12 @@ open http://localhost:9000
 
 ## Deploying
 
-We are currently using an unconventional method of deploying to the Harp Platform. You’ll need to have access to the project on the Harp Platform and the Dropbox shared with you to deploy. Follow the [Running locally](#running-locally) instructions, and then:
+Follow the [Running locally](#running-locally) instructions. You’ll need to be a collaborator on the project through Surge to deploy. Then:
 
 ```bash
-# Compile to your Dropbox
+# Compile to www/ and deploy
 npm run deploy
 ```
-
-Now, just press Publish on the chloi.io project on the [Harp Platform](http://harp.io).
 
 ## License
 

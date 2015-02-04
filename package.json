@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://chloi.io",
   "dependencies": {
-    "figment": "git://github.com/kennethormandy/figment",
+    "figment": "git://github.com/kennethormandy/figment"
   },
   "devDependencies": {
     "surge": "*"

@@ -2,14 +2,14 @@ Harp Platform gives designers and developers a blissful publishing experience. E
 
 Preprocessing is built-in, so Markdown, <abbr>LESS</abbr>, CoffeeScript and more can be used just as easily as <abbr>HTML</abbr>, <abbr>CSS</abbr>, and JavaScript. Custom domains and clean <abbr>URL</abbr>s make your site easier to find and share. Plus, every application comes with <abbr>SSL</abbr> by default.
 
-<figure class="figure-border figure-large">
+<figure class="figure--border figure--breakout">
 	<img src="/images/harp-platform/harp-platform-app-view.png" alt="Harp Platform’s app view" />
 	<figcaption>
 		With the Harp Platform, you can create an app or site stored right in your Dropbox. Each time you publish your Harp app, a build is created, which you can share or roll back to, whenever.
 	</figcaption>
 </figure>
 
-<figure class="figure-border">
+<figure class="figure--border">
 	<img src="/images/harp-platform/harp-platform-features.png" alt="Harp Platform’s app view" />
 </figure>
 

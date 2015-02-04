@@ -7,6 +7,7 @@ It’s built with ours and others’ open source projects, including:
 - [Harp](http://github.com/sintaxi/harp)
 - [Straight Up](https://github.com/kennethormandy/straight-up)
 - [Normalize-OpenType.css](https://github.com/kennethormandy/normalize-opentype.css)
+- [Figment](http://github.com/kennethormandy/figment)
 
 ![](preview.png)
 

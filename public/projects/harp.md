@@ -12,16 +12,20 @@ Harp has been used to build static sites, write internal documentation, serve la
 - CascadiaJS
 -->
 
-<iframe width="100%" style="min-height: 360px;" src="//www.youtube.com/embed/SEA0G9kpVJM?rel=0" frameborder="0" allowfullscreen></iframe>
-
-<figure>
-<img src="/images/harp/harp-website.png" alt="" class="figure-border figure-large" />
-<figcaption>The Harp website</figcaption>
+<figure class="figure--embed">
+  <div class="embed-container">
+    <iframe src="//www.youtube.com/embed/SEA0G9kpVJM?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
 </figure>
 
-<figure class="figure-aside">
-<img src="/images/harp/harp-identity-guide.png" alt="" class="figure-border" />
-<figcaption>Chloi maintains [the documentation](http://harpjs.com/docs), [Harp blog and newsletter](http://harpjs.com/blog), and [Harp’s identity guide](http://harpjs.com/identity/).</figcaption>
+<figure class="figure figure--border figure--breakout">
+  <img src="/images/harp/harp-website.png" alt="" />
+  <figcaption>The Harp website</figcaption>
+</figure>
+
+<figure class="figure figure--border figure--aside">
+  <img src="/images/harp/harp-identity-guide.png" alt="" class="figure--border" />
+  <figcaption>Chloi maintains [the documentation](http://harpjs.com/docs), [Harp blog and newsletter](http://harpjs.com/blog), and [Harp’s identity guide](http://harpjs.com/identity/).</figcaption>
 </figure>
 
 Harp helps us work more efficiently. Plus, it’s supported by [the Harp Platform](harp-platform), the publishing platform built on Dropbox, which uses our open source projects like Harp in production.

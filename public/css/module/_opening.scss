@@ -23,6 +23,10 @@
   margin-top: 1em;
 }
 
+.opening-address {
+  margin-top: 1em;
+}
+
 @include media($mid) {
 
   .opening + .main-container > p:first-of-type, .lead {
@@ -104,7 +108,7 @@
     right: -33%;
     @include shift(-3);
     @include span-columns(3 of 9);
-    top: 6em;
+    top: 5.25em;
     text-shadow: 0 1px 1.25em rgba(#000, 0.66);
   }
 

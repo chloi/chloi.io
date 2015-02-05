@@ -119,3 +119,13 @@ $base-transition-property   : all;
 $base-transition-duration   : 0.09s;
 $base-transition-function   : false;
 $base-transition-delay      : false;
+
+// Figment
+// =======
+
+$fig-numbered: false;
+$fig-border-color: $color-form-border;
+// $fig-container: $max-width; https://github.com/kennethormandy/figment/issues/13
+$fig-gutter: $gutter;
+$fig-line-height: $base-line-height;
+$fig-font-size-sm: 0.8em;

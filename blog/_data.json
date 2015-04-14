@@ -39,7 +39,7 @@
     "author": "rob_ellis",
     "url": "http://silentrob.me/articles/no-more-config",
     "date": "Jan 6, 2014",
-    "desc": "I grew up writing HTML, CSS and JavaScript like everyone else, but each time I opened a blank text document and starred at the page the awkward feeling crept in. My pinky finger still cringes from holding shift followed by <. Sure I could copy and paste in a template or use the HTML5 boilerplate, but that only saves keystrokes and does not make anything easier."
+    "desc": "I grew up writing HTML, CSS and JavaScript like everyone else, but each time I opened a blank text document and starred at the page the awkward feeling crept in. My pinky finger still cringes from holding shift followed by &rt;. Sure I could copy and paste in a template or use the HTML5 boilerplate, but that only saves keystrokes and does not make anything easier."
   },
   "projct-hub": {
     "title": "Project Hub: A new Harp template to track project timelines",

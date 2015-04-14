@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "http://chloi.io",
   "dependencies": {
-    "figment": "git://github.com/kennethormandy/figment"
+    "chasers": "git://github.com/kennethormandy/chasers#v0.3.0",
+    "figment": "git://github.com/kennethormandy/figment#v0.6.1",
+    "straight-up": "git://github.com/kennethormandy/straight-up#v0.1.4"
   },
   "devDependencies": {
     "surge": "*"

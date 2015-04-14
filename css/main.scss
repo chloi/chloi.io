@@ -3,14 +3,14 @@
 // Components
 // ==========
 
-@import "vendor/straight-up/straight-up";
-@import "vendor/chasers/chasers";
+@import "node_modules/chasers/src/chasers";
+@import "node_modules/straight-up/dist/straight-up";
 
 // Sass Features
 // =============
 
 @import "_variables";
-@import "vendor/straight-up/straight-up";
+@import "node_modules/straight-up/dist/straight-up";
 @import "module/functions/functions";
 @import "module/mixins/mixins";
 

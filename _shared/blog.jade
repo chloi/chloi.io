@@ -10,7 +10,7 @@ ul.post-list
   //- for each article in the _data.json file in public/articles
   for article in articles.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; }).slice(0, limit)
     if (environment==='production' && article.published !== false) || (environment==='development')
-      author = public.team._data[article.author]
+      - var author = public.team._data[article.author]
       li.post-item(class="#{ article.published===false ? 'post-item-unpublished' : '' }")
         h2.post-title
           a(href="#{ article.url ? article.url : slug }")= article.title
@@ -18,9 +18,10 @@ ul.post-list
           //- img.post-author-image(src="http://avatars.io/email/#{ author.email }?size=large", alt="A photo of #{ author.name }")          
           p Written by <a href="#{ author.url }">#{ author.name }</a> on 
             time.post-time(datetime="#{ article.date }")!= article.date
-        if article.desc && (!limit)
-          p.post-desc !{ article.desc } 
-            a(href="#{ article.url ? article.url : slug }") #{ continues[Math.floor(Math.random() * continues.length)] } #{ author.name.split(' ')[0] }’s blog…
+        if (article.desc && (!limit))
+          p.post-desc
+            != article.desc 
+          a(href="#{ article.url ? article.url : slug }") #{ continues[Math.floor(Math.random() * continues.length)] } #{ author.name.split(' ')[0] }’s blog…
 if limit < articles.length
   .media-more
     a(href="/blog")

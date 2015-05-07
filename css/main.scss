@@ -4,13 +4,14 @@
 // ==========
 
 @import "node_modules/chasers/src/chasers";
-@import "node_modules/straight-up/dist/straight-up";
 
 // Sass Features
 // =============
 
-@import "_variables";
-@import "node_modules/straight-up/dist/straight-up";
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "node_modules/bourbon-neat/app/assets/stylesheets/neat";
+@import "variables";
+
 @import "module/functions/functions";
 @import "module/mixins/mixins";
 

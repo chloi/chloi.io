@@ -9,7 +9,10 @@
     "straight-up": "git://github.com/kennethormandy/straight-up#v0.1.4"
   },
   "devDependencies": {
-    "surge": "*"
+    "bourbon": "^4.2.2",
+    "bourbon-neat": "^1.7.2",
+    "surge": "*",
+    "trash": "*"
   },
   "scripts": {
     "start": "harp server",

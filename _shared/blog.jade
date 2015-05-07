@@ -1,10 +1,10 @@
-articles = []
+- articles = []
 for article, slug in public.blog._data
   if article.date
     - article.slug = slug
     - articles.push(public.blog._data[slug])
 
-continues = ["Continue to", "More on", "Keep reading"]
+- continues = ["Continue to", "More on", "Keep reading"]
 
 ul.post-list
   //- for each article in the _data.json file in public/articles

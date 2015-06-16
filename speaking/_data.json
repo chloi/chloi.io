@@ -1,4 +1,35 @@
 {
+  "efficient-web-type-c-1556-6": {
+    "title": "Efficient Web Type, c. 1556",
+    "author": "kennethormandy",
+    "url": "http://typecon.com",
+    "date": "July 8, 2015",
+    "loc": "CascadiaJS",
+    "desc": "This talk draws draws from a 450 year-old lessons of efficient type design, and introduces the practical improvements the Web Open Font Format 2.0 will bring to designers and developers."
+  },
+  "superscript": {
+    "title": "SuperScript",
+    "author": "rob_ellis",
+    "url": "http://empirejs.org/#speakers",
+    "date": "April 27, 2015",
+    "loc": "EmpireJS New York"
+  },
+  "efficient-web-type-c-1556-5": {
+    "title": "Efficient Web Type, c. 1556",
+    "author": "kennethormandy",
+    "url": "http://styleandclass.ca/events/2015/design-passion",
+    "date": "April 7, 2015",
+    "loc": "Style & Class",
+    "desc": "This talk draws draws from a 450 year-old lessons of efficient type design, and introduces the practical improvements the Web Open Font Format 2.0 will bring to designers and developers."
+  },
+  "efficient-web-type-c-1556-4": {
+    "title": "Efficient Web Type, c. 1556",
+    "author": "kennethormandy",
+    "url": "http://2015.cssconf.com.au",
+    "date": "March 27, 2015",
+    "loc": "CSS Conf Australia",
+    "desc": "This talk draws draws from a 450 year-old lessons of efficient type design, and introduces the practical improvements the Web Open Font Format 2.0 will bring to designers and developers."
+  },
   "syntax-highlight-everything": {
     "title": "Syntax Highlight Everything",
     "author": "kennethormandy",

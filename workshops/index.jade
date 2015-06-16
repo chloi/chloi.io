@@ -1,9 +1,11 @@
 .container
   .opening
-    img.opening-image(src="../images/opening.jpg" alt="")
+    img.opening-image(src="../../images/opening.jpg" alt="")
     header.opening-header
       .opening-container.main-container
         h1.opening-title Professional<br/>Workshops
+        p.opening-desc Personalised mentorship for<br/>your development team.
+        a.button(href="mailto:info@chloi.io?subject=Workshops%20with%20Chloi") Sign up
 
   .main-container
     :markdown
@@ -21,13 +23,13 @@
 
     h2#speaking Speaking
 
-    p The Chloi Inc. team speaks regularly at events—close to home in Vancouver, to Washington, <abbr>DC</abbr>, and as far away as Denmark and  Argentina. If you’re looking for speakers, <a href="mailto:info@chloi.io?subject=Workshop">let us know</a>.
+    p The Chloi Inc. team speaks regularly at events—close to home in Vancouver, to Chicago, and as far away as Australia. If you’re looking for speakers, <a href="mailto:info@chloi.io?subject=Speaking">let us know</a>.
 
     != partial("../_shared/speaking")
 
   aside#js-cta.js-cta
     a(href="mailto:info@chloi.io?subject=Workshops%20with%20Chloi").aside.aside--promo
       .wordmark(href="/")!=partial("../images/wordmark.svg.ejs")
-      h4 Get your team ready for its next engineering challenge.
+      h4 Join the workshop
       p We teach, consult, and run in-house workshops for teams using or starting with Node.js and PhoneGap.
-      strong Speak with&nbsp;us
+      .button Speak with&nbsp;us

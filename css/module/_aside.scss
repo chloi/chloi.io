@@ -28,6 +28,18 @@
   strong {
     color: $chloi-purple;
   }
+  .button {
+    padding: 0.5em;
+    font-size: 1em;
+    background: $color-highlight;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    .button {
+      background: darken($color-highlight, 15%);
+    }
+  }
 }
 
 a.aside,

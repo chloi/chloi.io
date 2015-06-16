@@ -4,17 +4,17 @@
   "private": true,
   "homepage": "http://chloi.io",
   "dependencies": {
+    "bourbon": "4.2.2",
+    "bourbon-neat": "1.7.2",
     "chasers": "git://github.com/kennethormandy/chasers#v0.3.0",
-    "figment": "git://github.com/kennethormandy/figment#v0.6.1",
-    "straight-up": "git://github.com/kennethormandy/straight-up#v0.1.4"
+    "figment": "git://github.com/kennethormandy/figment#v0.6.2"
   },
   "devDependencies": {
-    "bourbon": "^4.2.2",
-    "bourbon-neat": "^1.7.2",
-    "surge": "*",
-    "trash": "*"
+    "surge": "latest",
+    "trash": "latest"
   },
   "scripts": {
+    "postinstall": "trash --force node_modules/bourbon-neat/test",
     "start": "harp server",
     "compile": "harp compile",
     "deploy": "npm run compile && surge ./www chloi.io"

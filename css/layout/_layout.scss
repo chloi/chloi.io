@@ -156,7 +156,7 @@
     // and we want to break out of it
     // and have the .media-grid be 9
     @include span-columns(9 of 5);
-    @include shift(-1);
+    @include shift(-1 of 5);
   }
 
   .media-grid-item {

@@ -1,15 +1,13 @@
+.opening
+  figure.map.figure--overlay.figure-overlay--dark
+    iframe(width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/kennethormandy.gmeo6793/attribution.html')
+    figcaption
+      strong Nearby?
+      address Chloi Inc. is located at<br/>
+        | <a href="https://www.google.ca/maps/place/55+E+Cordova+St/@49.2824697,-123.1034229,17z">604-55 East Cordova Street<br/>
+        | Vancouver, BC</a>
 .container
   .main-container
     h1#contact Work with us
     p Let’s talk about your project
     != partial("_shared/wufoo")
-figure.figure-overlay.figure-overlay--dark
-  iframe.map(width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/kennethormandy.gmeo6793/attribution.html')
-  //- iframe.map(frameBorder='0' src='https://a.tiles.mapbox.com/v3/kennethormandy.gmeo6793/mm/index.html?secure=1#16/49.2841/-123.1027')
-  .container
-    .main-container
-      figcaption.map-caption
-        strong Nearby?
-        address Chloi Inc. is located at<br/>
-          | <a href="https://www.google.ca/maps/place/55+E+Cordova+St/@49.2824697,-123.1034229,17z">604-55 East Cordova Street<br/>
-          | Vancouver, BC</a>

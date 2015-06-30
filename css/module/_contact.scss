@@ -62,23 +62,20 @@
 
   .main-container .contact {
   // .contact {
-    @include span-columns(8 of 5);
+    @include span-columns(9 of 6);
+    @include shift(-1 of 6);
     margin-bottom: $gutter;
+
   }
 
   .contact-form {
-    @include row();
-    @include span-columns(5 of 8);
+    @include span-columns(5 of 9);
+    @include shift(1 of 9);
     margin-bottom: 0;
   }
 
-  .contact-name,
-  .contact-email {
-    @include span-columns(4 of 8);
-  }
-
   .contact-secondary {
-    @include span-columns(3 of 8)
+    @include span-columns(3 of 9);
   }
 
 }

@@ -10,7 +10,7 @@ ul.post-list#speaking
     if (environment==='production' && talk.published !== false) || (environment==='development')
       - var author = public.team._data[talk.author]
       li.post-item
-        img.post-author-image(src="http://avatars.io/email/#{ author.email }?size=large", alt="A photo of #{ author.name }")
+        img.post-author-image(async src="http://avatars.io/gravatar/#{ author.email }?size=large", alt="A photo of #{ author.name }")
         h2.post-title: a(href="#{ talk.url ? talk.url : slug }")= talk.title
         .post-meta
           p
